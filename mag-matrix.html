@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="utf-8">
+
+<title>Mag Matrix</title>
+
+<!-- Checkboxes adapted from: https://moderncss.dev/pure-css-custom-checkbox-style/ -->
+
+<style>
+
+@media screen {
+	:root {
+		--matrix-elem-color: #fdff38;
+		background-color: #222222;
+		color: #bbbbbb;
+	}
+
+	button[type="reset"] {
+		display: block;
+		margin: auto;
+		margin-top: 1em;
+	}
+}
+
+@media print {
+	@page {size: landscape;}
+
+	:root {
+		--matrix-elem-color: black;
+		background-color: white;
+		color: black;
+	}
+
+	button[type="reset"] {
+		display: none;
+	}
+}
+
+.matrix {
+	margin: 1em;
+	display: inline-block;
+}
+
+input[type="checkbox"] {
+	/* Remove most all native input styles */
+	appearance: none;
+	/* Not removed via appearance */
+	margin: 0;
+
+	border-style: solid;
+	border-radius: 0.25em;
+	border-color: black;
+
+	border-top-color: black;
+	border-right-color: #444444;
+	border-bottom-color: #444444;
+	border-left-color: black;
+
+	display: inline-grid;
+}
+
+input[type="checkbox"]::before {
+	content: "";
+	width: 1em;
+	height: 1em;
+}
+
+input[type="checkbox"]:checked {
+	background-color: var(--matrix-elem-color);
+}
+
+input[type="checkbox"]:disabled {
+	cursor: not-allowed;
+}
+
+td {
+	padding: 0.5em 1em;
+	vertical-align: top;
+}
+
+</style>
+
+<script>
+
+</script>
+
+</head>
+
+<body>
+
+	<form class="matrix" action="">
+		<input type="checkbox" disabled checked /> <input type="checkbox" disabled checked /> <input type="checkbox" disabled checked /> <br />
+		<input type="checkbox" disabled checked /> <input type="checkbox" disabled         /> <input type="checkbox" disabled checked /> <br />
+		<input type="checkbox" disabled checked /> <input type="checkbox" disabled         /> <input type="checkbox" disabled checked /> <br />
+		<input type="checkbox" disabled checked /> <input type="checkbox" disabled         /> <input type="checkbox" disabled checked /> <br />
+		<input type="checkbox" disabled checked /> <input type="checkbox" disabled checked /> <input type="checkbox" disabled checked />
+	</form>
+
+	<form class="matrix" action="">
+		<input type="checkbox" disabled checked /> <input type="checkbox" disabled checked /> <input type="checkbox" disabled         /> <br />
+		<input type="checkbox" disabled         /> <input type="checkbox" disabled checked /> <input type="checkbox" disabled         /> <br />
+		<input type="checkbox" disabled         /> <input type="checkbox" disabled checked /> <input type="checkbox" disabled         /> <br />
+		<input type="checkbox" disabled         /> <input type="checkbox" disabled checked /> <input type="checkbox" disabled         /> <br />
+		<input type="checkbox" disabled checked /> <input type="checkbox" disabled checked /> <input type="checkbox" disabled checked />
+	</form>
+
+	<form class="matrix" action="">
+		<input type="checkbox" disabled checked /> <input type="checkbox" disabled checked /> <input type="checkbox" disabled checked /> <br />
+		<input type="checkbox" disabled         /> <input type="checkbox" disabled         /> <input type="checkbox" disabled checked /> <br />
+		<input type="checkbox" disabled checked /> <input type="checkbox" disabled checked /> <input type="checkbox" disabled checked /> <br />
+		<input type="checkbox" disabled checked /> <input type="checkbox" disabled         /> <input type="checkbox" disabled         /> <br />
+		<input type="checkbox" disabled checked /> <input type="checkbox" disabled checked /> <input type="checkbox" disabled checked />
+	</form>
+
+	<form class="matrix" action="">
+		<input type="checkbox" disabled checked /> <input type="checkbox" disabled checked /> <input type="checkbox" disabled checked /> <br />
+		<input type="checkbox" disabled         /> <input type="checkbox" disabled         /> <input type="checkbox" disabled checked /> <br />
+		<input type="checkbox" disabled checked /> <input type="checkbox" disabled checked /> <input type="checkbox" disabled checked /> <br />
+		<input type="checkbox" disabled         /> <input type="checkbox" disabled         /> <input type="checkbox" disabled checked /> <br />
+		<input type="checkbox" disabled checked /> <input type="checkbox" disabled checked /> <input type="checkbox" disabled checked />
+	</form>
+
+	<form class="matrix" action="">
+		<input type="checkbox" disabled checked /> <input type="checkbox" disabled         /> <input type="checkbox" disabled checked /> <br />
+		<input type="checkbox" disabled checked /> <input type="checkbox" disabled         /> <input type="checkbox" disabled checked /> <br />
+		<input type="checkbox" disabled checked /> <input type="checkbox" disabled checked /> <input type="checkbox" disabled checked /> <br />
+		<input type="checkbox" disabled         /> <input type="checkbox" disabled         /> <input type="checkbox" disabled checked /> <br />
+		<input type="checkbox" disabled         /> <input type="checkbox" disabled         /> <input type="checkbox" disabled checked />
+	</form>
+
+	<form class="matrix" action="">
+		<input type="checkbox" disabled checked /> <input type="checkbox" disabled checked /> <input type="checkbox" disabled checked /> <br />
+		<input type="checkbox" disabled checked /> <input type="checkbox" disabled         /> <input type="checkbox" disabled         /> <br />
+		<input type="checkbox" disabled checked /> <input type="checkbox" disabled checked /> <input type="checkbox" disabled checked /> <br />
+		<input type="checkbox" disabled         /> <input type="checkbox" disabled         /> <input type="checkbox" disabled checked /> <br />
+		<input type="checkbox" disabled checked /> <input type="checkbox" disabled checked /> <input type="checkbox" disabled checked />
+	</form>
+
+	<form class="matrix" action="">
+		<input type="checkbox" disabled checked /> <input type="checkbox" disabled checked /> <input type="checkbox" disabled checked /> <br />
+		<input type="checkbox" disabled checked /> <input type="checkbox" disabled         /> <input type="checkbox" disabled         /> <br />
+		<input type="checkbox" disabled checked /> <input type="checkbox" disabled checked /> <input type="checkbox" disabled checked /> <br />
+		<input type="checkbox" disabled checked /> <input type="checkbox" disabled         /> <input type="checkbox" disabled checked /> <br />
+		<input type="checkbox" disabled checked /> <input type="checkbox" disabled checked /> <input type="checkbox" disabled checked />
+	</form>
+
+	<form class="matrix" action="">
+		<input type="checkbox" disabled checked /> <input type="checkbox" disabled checked /> <input type="checkbox" disabled checked /> <br />
+		<input type="checkbox" disabled         /> <input type="checkbox" disabled         /> <input type="checkbox" disabled checked /> <br />
+		<input type="checkbox" disabled         /> <input type="checkbox" disabled         /> <input type="checkbox" disabled checked /> <br />
+		<input type="checkbox" disabled         /> <input type="checkbox" disabled         /> <input type="checkbox" disabled checked /> <br />
+		<input type="checkbox" disabled         /> <input type="checkbox" disabled         /> <input type="checkbox" disabled checked />
+	</form>
+
+	<form class="matrix" action="">
+		<input type="checkbox" disabled checked /> <input type="checkbox" disabled checked /> <input type="checkbox" disabled checked /> <br />
+		<input type="checkbox" disabled checked /> <input type="checkbox" disabled         /> <input type="checkbox" disabled checked /> <br />
+		<input type="checkbox" disabled checked /> <input type="checkbox" disabled checked /> <input type="checkbox" disabled checked /> <br />
+		<input type="checkbox" disabled checked /> <input type="checkbox" disabled         /> <input type="checkbox" disabled checked /> <br />
+		<input type="checkbox" disabled checked /> <input type="checkbox" disabled checked /> <input type="checkbox" disabled checked />
+	</form>
+
+	<form class="matrix" action="">
+		<input type="checkbox" disabled checked /> <input type="checkbox" disabled checked /> <input type="checkbox" disabled checked /> <br />
+		<input type="checkbox" disabled checked /> <input type="checkbox" disabled         /> <input type="checkbox" disabled checked /> <br />
+		<input type="checkbox" disabled checked /> <input type="checkbox" disabled checked /> <input type="checkbox" disabled checked /> <br />
+		<input type="checkbox" disabled         /> <input type="checkbox" disabled         /> <input type="checkbox" disabled checked /> <br />
+		<input type="checkbox" disabled         /> <input type="checkbox" disabled         /> <input type="checkbox" disabled checked />
+	</form>
+
+	<form class="matrix" action="">
+		<input type="checkbox" disabled checked /> <input type="checkbox" disabled checked /> <input type="checkbox" disabled checked /> <br />
+		<input type="checkbox" disabled checked /> <input type="checkbox" disabled         /> <input type="checkbox" disabled checked /> <br />
+		<input type="checkbox" disabled checked /> <input type="checkbox" disabled checked /> <input type="checkbox" disabled checked /> <br />
+		<input type="checkbox" disabled checked /> <input type="checkbox" disabled         /> <input type="checkbox" disabled checked /> <br />
+		<input type="checkbox" disabled checked /> <input type="checkbox" disabled         /> <input type="checkbox" disabled checked />
+	</form>
+
+	<form class="matrix" action="">
+		<input type="checkbox" disabled checked /> <input type="checkbox" disabled checked /> <input type="checkbox" disabled         /> <br />
+		<input type="checkbox" disabled checked /> <input type="checkbox" disabled         /> <input type="checkbox" disabled checked /> <br />
+		<input type="checkbox" disabled checked /> <input type="checkbox" disabled checked /> <input type="checkbox" disabled         /> <br />
+		<input type="checkbox" disabled checked /> <input type="checkbox" disabled         /> <input type="checkbox" disabled checked /> <br />
+		<input type="checkbox" disabled checked /> <input type="checkbox" disabled checked /> <input type="checkbox" disabled         />
+	</form>
+
+	<form class="matrix" action="">
+		<input type="checkbox" disabled checked /> <input type="checkbox" disabled checked /> <input type="checkbox" disabled checked /> <br />
+		<input type="checkbox" disabled checked /> <input type="checkbox" disabled         /> <input type="checkbox" disabled         /> <br />
+		<input type="checkbox" disabled checked /> <input type="checkbox" disabled         /> <input type="checkbox" disabled         /> <br />
+		<input type="checkbox" disabled checked /> <input type="checkbox" disabled         /> <input type="checkbox" disabled         /> <br />
+		<input type="checkbox" disabled checked /> <input type="checkbox" disabled checked /> <input type="checkbox" disabled checked />
+	</form>
+
+	<form class="matrix" action="">
+		<input type="checkbox" disabled checked /> <input type="checkbox" disabled checked /> <input type="checkbox" disabled         /> <br />
+		<input type="checkbox" disabled checked /> <input type="checkbox" disabled         /> <input type="checkbox" disabled checked /> <br />
+		<input type="checkbox" disabled checked /> <input type="checkbox" disabled         /> <input type="checkbox" disabled checked /> <br />
+		<input type="checkbox" disabled checked /> <input type="checkbox" disabled         /> <input type="checkbox" disabled checked /> <br />
+		<input type="checkbox" disabled checked /> <input type="checkbox" disabled checked /> <input type="checkbox" disabled         />
+	</form>
+
+	<form class="matrix" action="">
+		<input type="checkbox" disabled checked /> <input type="checkbox" disabled checked /> <input type="checkbox" disabled checked /> <br />
+		<input type="checkbox" disabled checked /> <input type="checkbox" disabled         /> <input type="checkbox" disabled         /> <br />
+		<input type="checkbox" disabled checked /> <input type="checkbox" disabled checked /> <input type="checkbox" disabled checked /> <br />
+		<input type="checkbox" disabled checked /> <input type="checkbox" disabled         /> <input type="checkbox" disabled         /> <br />
+		<input type="checkbox" disabled checked /> <input type="checkbox" disabled checked /> <input type="checkbox" disabled checked />
+	</form>
+
+	<form class="matrix" action="">
+		<input type="checkbox" disabled checked /> <input type="checkbox" disabled checked /> <input type="checkbox" disabled checked /> <br />
+		<input type="checkbox" disabled checked /> <input type="checkbox" disabled         /> <input type="checkbox" disabled         /> <br />
+		<input type="checkbox" disabled checked /> <input type="checkbox" disabled checked /> <input type="checkbox" disabled         /> <br />
+		<input type="checkbox" disabled checked /> <input type="checkbox" disabled         /> <input type="checkbox" disabled         /> <br />
+		<input type="checkbox" disabled checked /> <input type="checkbox" disabled         /> <input type="checkbox" disabled         />
+	</form>
+
+	<form class="matrix" action="">
+		<input type="checkbox" disabled         /> <input type="checkbox" disabled checked /> <input type="checkbox" disabled checked /> <br />
+		<input type="checkbox" disabled checked /> <input type="checkbox" disabled         /> <input type="checkbox" disabled         /> <br />
+		<input type="checkbox" disabled checked /> <input type="checkbox" disabled checked /> <input type="checkbox" disabled checked /> <br />
+		<input type="checkbox" disabled checked /> <input type="checkbox" disabled         /> <input type="checkbox" disabled checked /> <br />
+		<input type="checkbox" disabled         /> <input type="checkbox" disabled checked /> <input type="checkbox" disabled         />
+	</form>
+
+	<form class="matrix" action="">
+		<input type="checkbox" disabled checked /> <input type="checkbox" disabled         /> <input type="checkbox" disabled checked /> <br />
+		<input type="checkbox" disabled checked /> <input type="checkbox" disabled         /> <input type="checkbox" disabled checked /> <br />
+		<input type="checkbox" disabled checked /> <input type="checkbox" disabled checked /> <input type="checkbox" disabled checked /> <br />
+		<input type="checkbox" disabled checked /> <input type="checkbox" disabled         /> <input type="checkbox" disabled checked /> <br />
+		<input type="checkbox" disabled checked /> <input type="checkbox" disabled         /> <input type="checkbox" disabled checked />
+	</form>
+
+	<form class="matrix" action="">
+		<input type="checkbox" disabled checked /> <input type="checkbox" disabled checked /> <input type="checkbox" disabled checked /> <br />
+		<input type="checkbox" disabled         /> <input type="checkbox" disabled checked /> <input type="checkbox" disabled         /> <br />
+		<input type="checkbox" disabled         /> <input type="checkbox" disabled checked /> <input type="checkbox" disabled         /> <br />
+		<input type="checkbox" disabled         /> <input type="checkbox" disabled checked /> <input type="checkbox" disabled         /> <br />
+		<input type="checkbox" disabled checked /> <input type="checkbox" disabled checked /> <input type="checkbox" disabled checked />
+	</form>
+
+	<form class="matrix" action="">
+		<input type="checkbox" disabled         /> <input type="checkbox" disabled         /> <input type="checkbox" disabled checked /> <br />
+		<input type="checkbox" disabled         /> <input type="checkbox" disabled         /> <input type="checkbox" disabled checked /> <br />
+		<input type="checkbox" disabled         /> <input type="checkbox" disabled         /> <input type="checkbox" disabled checked /> <br />
+		<input type="checkbox" disabled checked /> <input type="checkbox" disabled         /> <input type="checkbox" disabled checked /> <br />
+		<input type="checkbox" disabled         /> <input type="checkbox" disabled checked /> <input type="checkbox" disabled         />
+	</form>
+
+	<form class="matrix" action="">
+		<input type="checkbox" disabled checked /> <input type="checkbox" disabled         /> <input type="checkbox" disabled checked /> <br />
+		<input type="checkbox" disabled checked /> <input type="checkbox" disabled         /> <input type="checkbox" disabled checked /> <br />
+		<input type="checkbox" disabled checked /> <input type="checkbox" disabled checked /> <input type="checkbox" disabled         /> <br />
+		<input type="checkbox" disabled checked /> <input type="checkbox" disabled         /> <input type="checkbox" disabled checked /> <br />
+		<input type="checkbox" disabled checked /> <input type="checkbox" disabled         /> <input type="checkbox" disabled checked />
+	</form>
+
+	<form class="matrix" action="">
+		<input type="checkbox" disabled checked /> <input type="checkbox" disabled         /> <input type="checkbox" disabled         /> <br />
+		<input type="checkbox" disabled checked /> <input type="checkbox" disabled         /> <input type="checkbox" disabled         /> <br />
+		<input type="checkbox" disabled checked /> <input type="checkbox" disabled         /> <input type="checkbox" disabled         /> <br />
+		<input type="checkbox" disabled checked /> <input type="checkbox" disabled         /> <input type="checkbox" disabled         /> <br />
+		<input type="checkbox" disabled checked /> <input type="checkbox" disabled checked /> <input type="checkbox" disabled checked />
+	</form>
+
+	<form class="matrix" action="">
+		<input type="checkbox" disabled checked /> <input type="checkbox" disabled         /> <input type="checkbox" disabled checked /> <br />
+		<input type="checkbox" disabled checked /> <input type="checkbox" disabled checked /> <input type="checkbox" disabled checked /> <br />
+		<input type="checkbox" disabled checked /> <input type="checkbox" disabled         /> <input type="checkbox" disabled checked /> <br />
+		<input type="checkbox" disabled checked /> <input type="checkbox" disabled         /> <input type="checkbox" disabled checked /> <br />
+		<input type="checkbox" disabled checked /> <input type="checkbox" disabled         /> <input type="checkbox" disabled checked />
+	</form>
+
+	<form class="matrix" action="">
+		<input type="checkbox" disabled checked /> <input type="checkbox" disabled checked /> <input type="checkbox" disabled         /> <br />
+		<input type="checkbox" disabled checked /> <input type="checkbox" disabled         /> <input type="checkbox" disabled checked /> <br />
+		<input type="checkbox" disabled checked /> <input type="checkbox" disabled         /> <input type="checkbox" disabled checked /> <br />
+		<input type="checkbox" disabled checked /> <input type="checkbox" disabled         /> <input type="checkbox" disabled checked /> <br />
+		<input type="checkbox" disabled checked /> <input type="checkbox" disabled         /> <input type="checkbox" disabled checked />
+	</form>
+
+	<form class="matrix" action="">
+		<input type="checkbox" disabled         /> <input type="checkbox" disabled checked /> <input type="checkbox" disabled         /> <br />
+		<input type="checkbox" disabled checked /> <input type="checkbox" disabled         /> <input type="checkbox" disabled checked /> <br />
+		<input type="checkbox" disabled checked /> <input type="checkbox" disabled         /> <input type="checkbox" disabled checked /> <br />
+		<input type="checkbox" disabled checked /> <input type="checkbox" disabled         /> <input type="checkbox" disabled checked /> <br />
+		<input type="checkbox" disabled         /> <input type="checkbox" disabled checked /> <input type="checkbox" disabled         />
+	</form>
+
+	<form class="matrix" action="">
+		<input type="checkbox" disabled checked /> <input type="checkbox" disabled checked /> <input type="checkbox" disabled checked /> <br />
+		<input type="checkbox" disabled checked /> <input type="checkbox" disabled         /> <input type="checkbox" disabled checked /> <br />
+		<input type="checkbox" disabled checked /> <input type="checkbox" disabled checked /> <input type="checkbox" disabled checked /> <br />
+		<input type="checkbox" disabled checked /> <input type="checkbox" disabled         /> <input type="checkbox" disabled         /> <br />
+		<input type="checkbox" disabled checked /> <input type="checkbox" disabled         /> <input type="checkbox" disabled         />
+	</form>
+
+	<form class="matrix" action="">
+		<input type="checkbox" disabled checked /> <input type="checkbox" disabled checked /> <input type="checkbox" disabled checked /> <br />
+		<input type="checkbox" disabled checked /> <input type="checkbox" disabled         /> <input type="checkbox" disabled checked /> <br />
+		<input type="checkbox" disabled checked /> <input type="checkbox" disabled         /> <input type="checkbox" disabled checked /> <br />
+		<input type="checkbox" disabled checked /> <input type="checkbox" disabled checked /> <input type="checkbox" disabled checked /> <br />
+		<input type="checkbox" disabled         /> <input type="checkbox" disabled         /> <input type="checkbox" disabled checked />
+	</form>
+
+	<form class="matrix" action="">
+		<input type="checkbox" disabled checked /> <input type="checkbox" disabled checked /> <input type="checkbox" disabled checked /> <br />
+		<input type="checkbox" disabled checked /> <input type="checkbox" disabled         /> <input type="checkbox" disabled checked /> <br />
+		<input type="checkbox" disabled checked /> <input type="checkbox" disabled checked /> <input type="checkbox" disabled         /> <br />
+		<input type="checkbox" disabled checked /> <input type="checkbox" disabled         /> <input type="checkbox" disabled checked /> <br />
+		<input type="checkbox" disabled checked /> <input type="checkbox" disabled         /> <input type="checkbox" disabled checked />
+	</form>
+
+	<form class="matrix" action="">
+		<input type="checkbox" disabled checked /> <input type="checkbox" disabled checked /> <input type="checkbox" disabled checked /> <br />
+		<input type="checkbox" disabled checked /> <input type="checkbox" disabled         /> <input type="checkbox" disabled         /> <br />
+		<input type="checkbox" disabled checked /> <input type="checkbox" disabled checked /> <input type="checkbox" disabled checked /> <br />
+		<input type="checkbox" disabled         /> <input type="checkbox" disabled         /> <input type="checkbox" disabled checked /> <br />
+		<input type="checkbox" disabled checked /> <input type="checkbox" disabled checked /> <input type="checkbox" disabled checked />
+	</form>
+
+	<form class="matrix" action="">
+		<input type="checkbox" disabled checked /> <input type="checkbox" disabled checked /> <input type="checkbox" disabled checked /> <br />
+		<input type="checkbox" disabled         /> <input type="checkbox" disabled checked /> <input type="checkbox" disabled         /> <br />
+		<input type="checkbox" disabled         /> <input type="checkbox" disabled checked /> <input type="checkbox" disabled         /> <br />
+		<input type="checkbox" disabled         /> <input type="checkbox" disabled checked /> <input type="checkbox" disabled         /> <br />
+		<input type="checkbox" disabled         /> <input type="checkbox" disabled checked /> <input type="checkbox" disabled         />
+	</form>
+
+	<form class="matrix" action="">
+		<input type="checkbox" disabled checked /> <input type="checkbox" disabled         /> <input type="checkbox" disabled checked /> <br />
+		<input type="checkbox" disabled checked /> <input type="checkbox" disabled         /> <input type="checkbox" disabled checked /> <br />
+		<input type="checkbox" disabled checked /> <input type="checkbox" disabled         /> <input type="checkbox" disabled checked /> <br />
+		<input type="checkbox" disabled checked /> <input type="checkbox" disabled         /> <input type="checkbox" disabled checked /> <br />
+		<input type="checkbox" disabled checked /> <input type="checkbox" disabled checked /> <input type="checkbox" disabled checked />
+	</form>
+
+	<form class="matrix" action="">
+		<input type="checkbox" disabled checked /> <input type="checkbox" disabled         /> <input type="checkbox" disabled checked /> <br />
+		<input type="checkbox" disabled checked /> <input type="checkbox" disabled         /> <input type="checkbox" disabled checked /> <br />
+		<input type="checkbox" disabled checked /> <input type="checkbox" disabled         /> <input type="checkbox" disabled checked /> <br />
+		<input type="checkbox" disabled checked /> <input type="checkbox" disabled         /> <input type="checkbox" disabled checked /> <br />
+		<input type="checkbox" disabled         /> <input type="checkbox" disabled checked /> <input type="checkbox" disabled         />
+	</form>
+
+	<form class="matrix" action="">
+		<input type="checkbox" disabled checked /> <input type="checkbox" disabled         /> <input type="checkbox" disabled checked /> <br />
+		<input type="checkbox" disabled checked /> <input type="checkbox" disabled         /> <input type="checkbox" disabled checked /> <br />
+		<input type="checkbox" disabled checked /> <input type="checkbox" disabled         /> <input type="checkbox" disabled checked /> <br />
+		<input type="checkbox" disabled checked /> <input type="checkbox" disabled checked /> <input type="checkbox" disabled checked /> <br />
+		<input type="checkbox" disabled checked /> <input type="checkbox" disabled         /> <input type="checkbox" disabled checked />
+	</form>
+
+	<form class="matrix" action="">
+		<input type="checkbox" disabled checked /> <input type="checkbox" disabled         /> <input type="checkbox" disabled checked /> <br />
+		<input type="checkbox" disabled checked /> <input type="checkbox" disabled         /> <input type="checkbox" disabled checked /> <br />
+		<input type="checkbox" disabled         /> <input type="checkbox" disabled checked /> <input type="checkbox" disabled         /> <br />
+		<input type="checkbox" disabled checked /> <input type="checkbox" disabled         /> <input type="checkbox" disabled checked /> <br />
+		<input type="checkbox" disabled checked /> <input type="checkbox" disabled         /> <input type="checkbox" disabled checked />
+	</form>
+
+	<form class="matrix" action="">
+		<input type="checkbox" disabled checked /> <input type="checkbox" disabled         /> <input type="checkbox" disabled checked /> <br />
+		<input type="checkbox" disabled checked /> <input type="checkbox" disabled         /> <input type="checkbox" disabled checked /> <br />
+		<input type="checkbox" disabled         /> <input type="checkbox" disabled checked /> <input type="checkbox" disabled         /> <br />
+		<input type="checkbox" disabled         /> <input type="checkbox" disabled checked /> <input type="checkbox" disabled         /> <br />
+		<input type="checkbox" disabled         /> <input type="checkbox" disabled checked /> <input type="checkbox" disabled         />
+	</form>
+
+	<form class="matrix" action="">
+		<input type="checkbox" disabled checked /> <input type="checkbox" disabled checked /> <input type="checkbox" disabled checked /> <br />
+		<input type="checkbox" disabled         /> <input type="checkbox" disabled         /> <input type="checkbox" disabled checked /> <br />
+		<input type="checkbox" disabled         /> <input type="checkbox" disabled checked /> <input type="checkbox" disabled         /> <br />
+		<input type="checkbox" disabled checked /> <input type="checkbox" disabled         /> <input type="checkbox" disabled         /> <br />
+		<input type="checkbox" disabled checked /> <input type="checkbox" disabled checked /> <input type="checkbox" disabled checked />
+	</form>
+
+	<form class="matrix" action="">
+		<input type="checkbox" disabled         /> <input type="checkbox" disabled         /> <input type="checkbox" disabled         /> <br />
+		<input type="checkbox" disabled         /> <input type="checkbox" disabled         /> <input type="checkbox" disabled         /> <br />
+		<input type="checkbox" disabled         /> <input type="checkbox" disabled         /> <input type="checkbox" disabled         /> <br />
+		<input type="checkbox" disabled         /> <input type="checkbox" disabled         /> <input type="checkbox" disabled         /> <br />
+		<input type="checkbox" disabled         /> <input type="checkbox" disabled checked /> <input type="checkbox" disabled         />
+	</form>
+
+	<form class="matrix" action="">
+		<input type="checkbox" disabled         /> <input type="checkbox" disabled         /> <input type="checkbox" disabled         /> <br />
+		<input type="checkbox" disabled         /> <input type="checkbox" disabled         /> <input type="checkbox" disabled         /> <br />
+		<input type="checkbox" disabled         /> <input type="checkbox" disabled         /> <input type="checkbox" disabled         /> <br />
+		<input type="checkbox" disabled         /> <input type="checkbox" disabled         /> <input type="checkbox" disabled         /> <br />
+		<input type="checkbox" disabled checked /> <input type="checkbox" disabled checked /> <input type="checkbox" disabled checked />
+	</form>
+
+	<form class="matrix" action="">
+		<input type="checkbox" disabled         /> <input type="checkbox" disabled         /> <input type="checkbox" disabled         /> <br />
+		<input type="checkbox" disabled         /> <input type="checkbox" disabled         /> <input type="checkbox" disabled         /> <br />
+		<input type="checkbox" disabled checked /> <input type="checkbox" disabled checked /> <input type="checkbox" disabled checked /> <br />
+		<input type="checkbox" disabled         /> <input type="checkbox" disabled         /> <input type="checkbox" disabled         /> <br />
+		<input type="checkbox" disabled         /> <input type="checkbox" disabled         /> <input type="checkbox" disabled         />
+	</form>
+
+	<form class="matrix" action="">
+		<input type="checkbox" disabled         /> <input type="checkbox" disabled         /> <input type="checkbox" disabled         /> <br />
+		<input type="checkbox" disabled         /> <input type="checkbox" disabled checked /> <input type="checkbox" disabled         /> <br />
+		<input type="checkbox" disabled checked /> <input type="checkbox" disabled checked /> <input type="checkbox" disabled checked /> <br />
+		<input type="checkbox" disabled         /> <input type="checkbox" disabled checked /> <input type="checkbox" disabled         /> <br />
+		<input type="checkbox" disabled         /> <input type="checkbox" disabled         /> <input type="checkbox" disabled         />
+	</form>
+
+	<form class="matrix" action="">
+		<input type="checkbox" disabled checked /> <input type="checkbox" disabled checked /> <input type="checkbox" disabled checked /> <br />
+		<input type="checkbox" disabled checked /> <input type="checkbox" disabled checked /> <input type="checkbox" disabled checked /> <br />
+		<input type="checkbox" disabled checked /> <input type="checkbox" disabled checked /> <input type="checkbox" disabled checked /> <br />
+		<input type="checkbox" disabled checked /> <input type="checkbox" disabled checked /> <input type="checkbox" disabled checked /> <br />
+		<input type="checkbox" disabled checked /> <input type="checkbox" disabled checked /> <input type="checkbox" disabled checked />
+	</form>
+
+</body>
+
+</html>
