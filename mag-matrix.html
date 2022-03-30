@@ -46,7 +46,7 @@
 	display: inline-block;
 }
 
-input[type="checkbox"] {
+.matrix input[type="checkbox"] {
 	/* Remove most all native input styles */
 	appearance: none;
 	/* Not removed via appearance */
@@ -62,17 +62,17 @@ input[type="checkbox"] {
 	display: inline-grid;
 }
 
-input[type="checkbox"]::before {
+.matrix input[type="checkbox"]::before {
 	content: "";
 	width: 1em;
 	height: 1em;
 }
 
-input[type="checkbox"]:checked {
+.matrix input[type="checkbox"]:checked {
 	background-color: var(--matrix-elem-color);
 }
 
-input[type="checkbox"]:disabled {
+.matrix input[type="checkbox"]:disabled {
 	cursor: not-allowed;
 }
 
