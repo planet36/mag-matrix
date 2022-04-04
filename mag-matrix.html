@@ -24,9 +24,16 @@
 		--color-mag-mct: #94795d; /* medium coyote tan */
 		--color-mag-mct-border-dark: #71583d;
 		--color-mag-mct-border-light: #b99c7f;
+	}
 
+	.color-mag-black {
 		background-color: var(--color-mag-black);
 		color: darkgray;
+	}
+
+	.color-mag-mct {
+		background-color: var(--color-mag-mct);
+		color: maroon;
 	}
 
 	button[type="reset"] {
@@ -47,12 +54,22 @@
 		margin: 0 0.1em 0 0.1em;
 
 		border-style: solid;
+
+		display: inline-grid;
+	}
+
+	.color-mag-black .matrix input[type="checkbox"] {
 		border-top-color: var(--color-mag-black-border-dark);
 		border-right-color: var(--color-mag-black-border-light);
 		border-bottom-color: var(--color-mag-black-border-light);
 		border-left-color: var(--color-mag-black-border-dark);
+	}
 
-		display: inline-grid;
+	.color-mag-mct .matrix input[type="checkbox"] {
+		border-top-color: var(--color-mag-mct-border-dark);
+		border-right-color: var(--color-mag-mct-border-light);
+		border-bottom-color: var(--color-mag-mct-border-light);
+		border-left-color: var(--color-mag-mct-border-dark);
 	}
 
 	.matrix input[type="checkbox"]::before {
