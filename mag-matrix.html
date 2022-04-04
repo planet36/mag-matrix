@@ -18,8 +18,12 @@
 		--color-matrix-dot: #fdff38;
 
 		--color-mag-black: #222222;
+		--color-mag-black-border-dark: #000000;
+		--color-mag-black-border-light: #444444;
 
 		--color-mag-mct: #94795d; /* medium coyote tan */
+		--color-mag-mct-border-dark: #71583d;
+		--color-mag-mct-border-light: #b99c7f;
 
 		background-color: var(--color-mag-black);
 		color: darkgray;
@@ -43,10 +47,10 @@
 		margin: 0 0.1em 0 0.1em;
 
 		border-style: solid;
-		border-top-color: black;
-		border-right-color: #444444;
-		border-bottom-color: #444444;
-		border-left-color: black;
+		border-top-color: var(--color-mag-black-border-dark);
+		border-right-color: var(--color-mag-black-border-light);
+		border-bottom-color: var(--color-mag-black-border-light);
+		border-left-color: var(--color-mag-black-border-dark);
 
 		display: inline-grid;
 	}
