@@ -136,12 +136,30 @@ SPDX-FileCopyrightText: Steven Ward
 SPDX-License-Identifier: OSL-3.0
 */
 
+var default_color_mat_dot;
+
+function setup_color_mat_dot() {
+	var root = document.querySelector(":root");
+	var styles = window.getComputedStyle(root);
+	default_color_mat_dot = styles.getPropertyValue("--color-mat-dot");
+
+	var input_color_mat_dot = document.querySelector("#color-mat-dot");
+	input_color_mat_dot.value = default_color_mat_dot;
+}
+
+function change_color_mat_dot(new_color) {
+	var root = document.querySelector(":root");
+	root.style.setProperty("--color-mat-dot", new_color);
+}
+
+window.onload = setup_color_mat_dot;
+
 function set_color_mag_black() {
-document.body.classList.replace("color-mag-mct", "color-mag-black");
+	document.body.classList.replace("color-mag-mct", "color-mag-black");
 }
 
 function set_color_mag_mct() {
-document.body.classList.replace("color-mag-black", "color-mag-mct");
+	document.body.classList.replace("color-mag-black", "color-mag-mct");
 }
 
 </script>
@@ -158,6 +176,13 @@ document.body.classList.replace("color-mag-black", "color-mag-mct");
 				<label><input type="radio" name="color-mag"         oninput="set_color_mag_mct()">Medium Coyote Tan</label>
 			</fieldset>
 		</form>
+	</div>
+
+	<div class="noprint">
+		<fieldset>
+			<legend>Specify dot color</legend>
+			<input type="color" id="color-mat-dot" oninput="change_color_mat_dot(this.value)">
+		</fieldset>
 	</div>
 
 	<form class="matrix" name="30" action="" title="DIGIT ZERO">
