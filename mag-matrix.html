@@ -136,11 +136,29 @@ SPDX-FileCopyrightText: Steven Ward
 SPDX-License-Identifier: OSL-3.0
 */
 
+function set_color_mag_black() {
+document.body.classList.replace("color-mag-mct", "color-mag-black");
+}
+
+function set_color_mag_mct() {
+document.body.classList.replace("color-mag-black", "color-mag-mct");
+}
+
 </script>
 
 </head>
 
 <body class="color-mag-black">
+
+	<div class="noprint">
+		<form action="">
+			<fieldset>
+				<legend>Specify magazine color</legend>
+				<label><input type="radio" name="color-mag" checked oninput="set_color_mag_black()">Black</label>
+				<label><input type="radio" name="color-mag"         oninput="set_color_mag_mct()">Medium Coyote Tan</label>
+			</fieldset>
+		</form>
+	</div>
 
 	<form class="matrix" name="30" action="" title="DIGIT ZERO">
 		<input type="checkbox" checked /><input type="checkbox" checked /><input type="checkbox" checked /><br />
