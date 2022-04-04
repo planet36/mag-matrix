@@ -16,10 +16,13 @@
 @media screen {
 	:root {
 		--color-matrix-dot: #fdff38;
+
 		--color-mag-black: #222222;
+
 		--color-mag-mct: #94795d; /* medium coyote tan */
+
 		background-color: var(--color-mag-black);
-		color: #bbbbbb;
+		color: darkgray;
 	}
 
 	button[type="reset"] {
@@ -40,7 +43,10 @@
 		margin: 0 0.1em 0 0.1em;
 
 		border-style: solid;
-		border-color: black #444444 #444444 black;
+		border-top-color: black;
+		border-right-color: #444444;
+		border-bottom-color: #444444;
+		border-left-color: black;
 
 		display: inline-grid;
 	}
