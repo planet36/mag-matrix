@@ -189,12 +189,12 @@ function set_color_mag_mct() {
 function change_output(input_text) {
 
 	const default_in_char = " ";
-	const default_in_code = default_in_char.charCodeAt(0);
+	const default_in_code = default_in_char.codePointAt(0);
 	const default_in_code_str = default_in_code.toString(16).toUpperCase();
 	input_text = input_text.padEnd(max_len_input_text, default_in_char);
 
 	for (var i = 0; i < max_len_input_text; ++i) {
-		var in_code = input_text.charCodeAt(i);
+		var in_code = input_text.codePointAt(i);
 		if (isNaN(in_code)) {
 			in_code = default_in_code;
 		}
@@ -202,7 +202,7 @@ function change_output(input_text) {
 		var in_code_str = in_code.toString(16).toUpperCase();
 		var form_name = "code_" + in_code_str;
 		if (document.forms[form_name] === undefined) {
-			warn_once("No matrix character for " + String.fromCharCode(in_code) + " (U+" + in_code_str.padStart(max_len_input_text, "0") + ")");
+			warn_once("No matrix character for " + String.fromCodePoint(in_code) + " (U+" + in_code_str.padStart(max_len_input_text, "0") + ")");
 			in_code_str = default_in_code_str;
 			form_name = "code_" + in_code_str;
 		}
@@ -219,7 +219,7 @@ function append_char_code(form_name) {
 
 	var in_code_str = form_name.substring("code_".length);
 	var in_code = parseInt(in_code_str, 16);
-	var in_char = String.fromCharCode(in_code);
+	var in_char = String.fromCodePoint(in_code);
 
 	var input_text_elem = document.querySelector("#input_text");
 
