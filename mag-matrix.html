@@ -136,23 +136,23 @@ SPDX-FileCopyrightText: Steven Ward
 SPDX-License-Identifier: OSL-3.0
 */
 
-var default_color_mat_dot;
+var default_color_dot;
 
-function setup_color_mat_dot() {
+function setup_color_dot() {
 	var root = document.querySelector(":root");
 	var styles = window.getComputedStyle(root);
-	default_color_mat_dot = styles.getPropertyValue("--color-dot");
+	default_color_dot = styles.getPropertyValue("--color-dot");
 
-	var input_color_mat_dot = document.querySelector("#color-dot");
-	input_color_mat_dot.value = default_color_mat_dot;
+	var input_color_dot = document.querySelector("#color-dot");
+	input_color_dot.value = default_color_dot;
 }
 
-function change_color_mat_dot(new_color) {
+function change_color_dot(new_color) {
 	var root = document.querySelector(":root");
 	root.style.setProperty("--color-dot", new_color);
 }
 
-window.onload = setup_color_mat_dot;
+window.onload = setup_color_dot;
 
 function set_color_mag_black() {
 	document.body.classList.replace("color-mag-mct", "color-mag-black");
@@ -181,7 +181,7 @@ function set_color_mag_mct() {
 	<div class="noprint">
 		<fieldset>
 			<legend>Specify dot color</legend>
-			<input type="color" id="color-dot" oninput="change_color_mat_dot(this.value)">
+			<input type="color" id="color-dot" oninput="change_color_dot(this.value)">
 		</fieldset>
 	</div>
 
