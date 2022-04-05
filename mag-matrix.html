@@ -143,7 +143,7 @@ function setup_color_dot() {
 	var styles = window.getComputedStyle(root);
 	default_color_dot = styles.getPropertyValue("--color-dot");
 
-	var input_color_dot = document.querySelector("#color-dot");
+	var input_color_dot = document.querySelector("#color_dot");
 	input_color_dot.value = default_color_dot;
 }
 
@@ -172,13 +172,13 @@ function set_color_mag_mct() {
 
 		<fieldset class="noprint">
 			<legend>Magazine color</legend>
-			<label><input type="radio" name="color-mag" checked oninput="set_color_mag_black()">Black</label>
-			<label><input type="radio" name="color-mag"         oninput="set_color_mag_mct()">Medium Coyote Tan</label>
+			<label><input type="radio" name="color_mag" checked oninput="set_color_mag_black()">Black</label>
+			<label><input type="radio" name="color_mag"         oninput="set_color_mag_mct()">Medium Coyote Tan</label>
 		</fieldset>
 
 		<fieldset class="noprint">
 			<legend>Dot color</legend>
-			<input type="color" id="color-dot" oninput="change_color_dot(this.value)">
+			<input type="color" id="color_dot" oninput="change_color_dot(this.value)">
 		</fieldset>
 
 	</div>
