@@ -215,6 +215,20 @@ function change_output(input_text) {
 	}
 }
 
+function append_char_code(form_name) {
+
+	var in_code_str = form_name.substring("code_".length);
+	var in_code = parseInt(in_code_str, 16);
+	var in_char = String.fromCharCode(in_code);
+
+	var input_text_elem = document.querySelector("#input_text");
+
+	if (input_text_elem.textLength < max_len_input_text) {
+		input_text_elem.value += in_char;
+		input_text_elem.dispatchEvent(new Event("input"));
+	}
+}
+
 </script>
 
 </head>
@@ -292,6 +306,7 @@ function change_output(input_text) {
 			<input type="checkbox" checked /><input type="checkbox"         /><input type="checkbox" checked /><br />
 			<input type="checkbox" checked /><input type="checkbox"         /><input type="checkbox" checked /><br />
 			<input type="checkbox" checked /><input type="checkbox" checked /><input type="checkbox" checked />
+			<button type="button" onclick="append_char_code(this.parentElement.name)">Add</button>
 			<button type="reset">Reset</button>
 		</form>
 
@@ -301,6 +316,7 @@ function change_output(input_text) {
 			<input type="checkbox"         /><input type="checkbox" checked /><input type="checkbox"         /><br />
 			<input type="checkbox"         /><input type="checkbox" checked /><input type="checkbox"         /><br />
 			<input type="checkbox" checked /><input type="checkbox" checked /><input type="checkbox" checked />
+			<button type="button" onclick="append_char_code(this.parentElement.name)">Add</button>
 			<button type="reset">Reset</button>
 		</form>
 
@@ -310,6 +326,7 @@ function change_output(input_text) {
 			<input type="checkbox" checked /><input type="checkbox" checked /><input type="checkbox" checked /><br />
 			<input type="checkbox" checked /><input type="checkbox"         /><input type="checkbox"         /><br />
 			<input type="checkbox" checked /><input type="checkbox" checked /><input type="checkbox" checked />
+			<button type="button" onclick="append_char_code(this.parentElement.name)">Add</button>
 			<button type="reset">Reset</button>
 		</form>
 
@@ -319,6 +336,7 @@ function change_output(input_text) {
 			<input type="checkbox" checked /><input type="checkbox" checked /><input type="checkbox" checked /><br />
 			<input type="checkbox"         /><input type="checkbox"         /><input type="checkbox" checked /><br />
 			<input type="checkbox" checked /><input type="checkbox" checked /><input type="checkbox" checked />
+			<button type="button" onclick="append_char_code(this.parentElement.name)">Add</button>
 			<button type="reset">Reset</button>
 		</form>
 
@@ -328,6 +346,7 @@ function change_output(input_text) {
 			<input type="checkbox" checked /><input type="checkbox" checked /><input type="checkbox" checked /><br />
 			<input type="checkbox"         /><input type="checkbox"         /><input type="checkbox" checked /><br />
 			<input type="checkbox"         /><input type="checkbox"         /><input type="checkbox" checked />
+			<button type="button" onclick="append_char_code(this.parentElement.name)">Add</button>
 			<button type="reset">Reset</button>
 		</form>
 
@@ -337,6 +356,7 @@ function change_output(input_text) {
 			<input type="checkbox" checked /><input type="checkbox" checked /><input type="checkbox" checked /><br />
 			<input type="checkbox"         /><input type="checkbox"         /><input type="checkbox" checked /><br />
 			<input type="checkbox" checked /><input type="checkbox" checked /><input type="checkbox" checked />
+			<button type="button" onclick="append_char_code(this.parentElement.name)">Add</button>
 			<button type="reset">Reset</button>
 		</form>
 
@@ -346,6 +366,7 @@ function change_output(input_text) {
 			<input type="checkbox" checked /><input type="checkbox" checked /><input type="checkbox" checked /><br />
 			<input type="checkbox" checked /><input type="checkbox"         /><input type="checkbox" checked /><br />
 			<input type="checkbox" checked /><input type="checkbox" checked /><input type="checkbox" checked />
+			<button type="button" onclick="append_char_code(this.parentElement.name)">Add</button>
 			<button type="reset">Reset</button>
 		</form>
 
@@ -355,6 +376,7 @@ function change_output(input_text) {
 			<input type="checkbox"         /><input type="checkbox"         /><input type="checkbox" checked /><br />
 			<input type="checkbox"         /><input type="checkbox"         /><input type="checkbox" checked /><br />
 			<input type="checkbox"         /><input type="checkbox"         /><input type="checkbox" checked />
+			<button type="button" onclick="append_char_code(this.parentElement.name)">Add</button>
 			<button type="reset">Reset</button>
 		</form>
 
@@ -364,6 +386,7 @@ function change_output(input_text) {
 			<input type="checkbox" checked /><input type="checkbox" checked /><input type="checkbox" checked /><br />
 			<input type="checkbox" checked /><input type="checkbox"         /><input type="checkbox" checked /><br />
 			<input type="checkbox" checked /><input type="checkbox" checked /><input type="checkbox" checked />
+			<button type="button" onclick="append_char_code(this.parentElement.name)">Add</button>
 			<button type="reset">Reset</button>
 		</form>
 
@@ -373,6 +396,7 @@ function change_output(input_text) {
 			<input type="checkbox" checked /><input type="checkbox" checked /><input type="checkbox" checked /><br />
 			<input type="checkbox"         /><input type="checkbox"         /><input type="checkbox" checked /><br />
 			<input type="checkbox"         /><input type="checkbox"         /><input type="checkbox" checked />
+			<button type="button" onclick="append_char_code(this.parentElement.name)">Add</button>
 			<button type="reset">Reset</button>
 		</form>
 
@@ -382,6 +406,7 @@ function change_output(input_text) {
 			<input type="checkbox" checked /><input type="checkbox" checked /><input type="checkbox" checked /><br />
 			<input type="checkbox" checked /><input type="checkbox"         /><input type="checkbox" checked /><br />
 			<input type="checkbox" checked /><input type="checkbox"         /><input type="checkbox" checked />
+			<button type="button" onclick="append_char_code(this.parentElement.name)">Add</button>
 			<button type="reset">Reset</button>
 		</form>
 
@@ -391,6 +416,7 @@ function change_output(input_text) {
 			<input type="checkbox" checked /><input type="checkbox" checked /><input type="checkbox"         /><br />
 			<input type="checkbox" checked /><input type="checkbox"         /><input type="checkbox" checked /><br />
 			<input type="checkbox" checked /><input type="checkbox" checked /><input type="checkbox"         />
+			<button type="button" onclick="append_char_code(this.parentElement.name)">Add</button>
 			<button type="reset">Reset</button>
 		</form>
 
@@ -400,6 +426,7 @@ function change_output(input_text) {
 			<input type="checkbox" checked /><input type="checkbox"         /><input type="checkbox"         /><br />
 			<input type="checkbox" checked /><input type="checkbox"         /><input type="checkbox"         /><br />
 			<input type="checkbox" checked /><input type="checkbox" checked /><input type="checkbox" checked />
+			<button type="button" onclick="append_char_code(this.parentElement.name)">Add</button>
 			<button type="reset">Reset</button>
 		</form>
 
@@ -409,6 +436,7 @@ function change_output(input_text) {
 			<input type="checkbox" checked /><input type="checkbox"         /><input type="checkbox" checked /><br />
 			<input type="checkbox" checked /><input type="checkbox"         /><input type="checkbox" checked /><br />
 			<input type="checkbox" checked /><input type="checkbox" checked /><input type="checkbox"         />
+			<button type="button" onclick="append_char_code(this.parentElement.name)">Add</button>
 			<button type="reset">Reset</button>
 		</form>
 
@@ -418,6 +446,7 @@ function change_output(input_text) {
 			<input type="checkbox" checked /><input type="checkbox" checked /><input type="checkbox" checked /><br />
 			<input type="checkbox" checked /><input type="checkbox"         /><input type="checkbox"         /><br />
 			<input type="checkbox" checked /><input type="checkbox" checked /><input type="checkbox" checked />
+			<button type="button" onclick="append_char_code(this.parentElement.name)">Add</button>
 			<button type="reset">Reset</button>
 		</form>
 
@@ -427,6 +456,7 @@ function change_output(input_text) {
 			<input type="checkbox" checked /><input type="checkbox" checked /><input type="checkbox"         /><br />
 			<input type="checkbox" checked /><input type="checkbox"         /><input type="checkbox"         /><br />
 			<input type="checkbox" checked /><input type="checkbox"         /><input type="checkbox"         />
+			<button type="button" onclick="append_char_code(this.parentElement.name)">Add</button>
 			<button type="reset">Reset</button>
 		</form>
 
@@ -436,6 +466,7 @@ function change_output(input_text) {
 			<input type="checkbox" checked /><input type="checkbox" checked /><input type="checkbox" checked /><br />
 			<input type="checkbox" checked /><input type="checkbox"         /><input type="checkbox" checked /><br />
 			<input type="checkbox"         /><input type="checkbox" checked /><input type="checkbox"         />
+			<button type="button" onclick="append_char_code(this.parentElement.name)">Add</button>
 			<button type="reset">Reset</button>
 		</form>
 
@@ -445,6 +476,7 @@ function change_output(input_text) {
 			<input type="checkbox" checked /><input type="checkbox" checked /><input type="checkbox" checked /><br />
 			<input type="checkbox" checked /><input type="checkbox"         /><input type="checkbox" checked /><br />
 			<input type="checkbox" checked /><input type="checkbox"         /><input type="checkbox" checked />
+			<button type="button" onclick="append_char_code(this.parentElement.name)">Add</button>
 			<button type="reset">Reset</button>
 		</form>
 
@@ -454,6 +486,7 @@ function change_output(input_text) {
 			<input type="checkbox"         /><input type="checkbox" checked /><input type="checkbox"         /><br />
 			<input type="checkbox"         /><input type="checkbox" checked /><input type="checkbox"         /><br />
 			<input type="checkbox" checked /><input type="checkbox" checked /><input type="checkbox" checked />
+			<button type="button" onclick="append_char_code(this.parentElement.name)">Add</button>
 			<button type="reset">Reset</button>
 		</form>
 
@@ -463,6 +496,7 @@ function change_output(input_text) {
 			<input type="checkbox"         /><input type="checkbox"         /><input type="checkbox" checked /><br />
 			<input type="checkbox" checked /><input type="checkbox"         /><input type="checkbox" checked /><br />
 			<input type="checkbox"         /><input type="checkbox" checked /><input type="checkbox"         />
+			<button type="button" onclick="append_char_code(this.parentElement.name)">Add</button>
 			<button type="reset">Reset</button>
 		</form>
 
@@ -472,6 +506,7 @@ function change_output(input_text) {
 			<input type="checkbox" checked /><input type="checkbox" checked /><input type="checkbox"         /><br />
 			<input type="checkbox" checked /><input type="checkbox"         /><input type="checkbox" checked /><br />
 			<input type="checkbox" checked /><input type="checkbox"         /><input type="checkbox" checked />
+			<button type="button" onclick="append_char_code(this.parentElement.name)">Add</button>
 			<button type="reset">Reset</button>
 		</form>
 
@@ -481,6 +516,7 @@ function change_output(input_text) {
 			<input type="checkbox" checked /><input type="checkbox"         /><input type="checkbox"         /><br />
 			<input type="checkbox" checked /><input type="checkbox"         /><input type="checkbox"         /><br />
 			<input type="checkbox" checked /><input type="checkbox" checked /><input type="checkbox" checked />
+			<button type="button" onclick="append_char_code(this.parentElement.name)">Add</button>
 			<button type="reset">Reset</button>
 		</form>
 
@@ -490,6 +526,7 @@ function change_output(input_text) {
 			<input type="checkbox" checked /><input type="checkbox"         /><input type="checkbox" checked /><br />
 			<input type="checkbox" checked /><input type="checkbox"         /><input type="checkbox" checked /><br />
 			<input type="checkbox" checked /><input type="checkbox"         /><input type="checkbox" checked />
+			<button type="button" onclick="append_char_code(this.parentElement.name)">Add</button>
 			<button type="reset">Reset</button>
 		</form>
 
@@ -499,6 +536,7 @@ function change_output(input_text) {
 			<input type="checkbox" checked /><input type="checkbox"         /><input type="checkbox" checked /><br />
 			<input type="checkbox" checked /><input type="checkbox"         /><input type="checkbox" checked /><br />
 			<input type="checkbox" checked /><input type="checkbox"         /><input type="checkbox" checked />
+			<button type="button" onclick="append_char_code(this.parentElement.name)">Add</button>
 			<button type="reset">Reset</button>
 		</form>
 
@@ -508,6 +546,7 @@ function change_output(input_text) {
 			<input type="checkbox" checked /><input type="checkbox"         /><input type="checkbox" checked /><br />
 			<input type="checkbox" checked /><input type="checkbox"         /><input type="checkbox" checked /><br />
 			<input type="checkbox"         /><input type="checkbox" checked /><input type="checkbox"         />
+			<button type="button" onclick="append_char_code(this.parentElement.name)">Add</button>
 			<button type="reset">Reset</button>
 		</form>
 
@@ -517,6 +556,7 @@ function change_output(input_text) {
 			<input type="checkbox" checked /><input type="checkbox" checked /><input type="checkbox" checked /><br />
 			<input type="checkbox" checked /><input type="checkbox"         /><input type="checkbox"         /><br />
 			<input type="checkbox" checked /><input type="checkbox"         /><input type="checkbox"         />
+			<button type="button" onclick="append_char_code(this.parentElement.name)">Add</button>
 			<button type="reset">Reset</button>
 		</form>
 
@@ -526,6 +566,7 @@ function change_output(input_text) {
 			<input type="checkbox" checked /><input type="checkbox"         /><input type="checkbox" checked /><br />
 			<input type="checkbox" checked /><input type="checkbox" checked /><input type="checkbox" checked /><br />
 			<input type="checkbox"         /><input type="checkbox"         /><input type="checkbox" checked />
+			<button type="button" onclick="append_char_code(this.parentElement.name)">Add</button>
 			<button type="reset">Reset</button>
 		</form>
 
@@ -535,6 +576,7 @@ function change_output(input_text) {
 			<input type="checkbox" checked /><input type="checkbox" checked /><input type="checkbox"         /><br />
 			<input type="checkbox" checked /><input type="checkbox"         /><input type="checkbox" checked /><br />
 			<input type="checkbox" checked /><input type="checkbox"         /><input type="checkbox" checked />
+			<button type="button" onclick="append_char_code(this.parentElement.name)">Add</button>
 			<button type="reset">Reset</button>
 		</form>
 
@@ -544,6 +586,7 @@ function change_output(input_text) {
 			<input type="checkbox" checked /><input type="checkbox" checked /><input type="checkbox" checked /><br />
 			<input type="checkbox"         /><input type="checkbox"         /><input type="checkbox" checked /><br />
 			<input type="checkbox" checked /><input type="checkbox" checked /><input type="checkbox" checked />
+			<button type="button" onclick="append_char_code(this.parentElement.name)">Add</button>
 			<button type="reset">Reset</button>
 		</form>
 
@@ -553,6 +596,7 @@ function change_output(input_text) {
 			<input type="checkbox"         /><input type="checkbox" checked /><input type="checkbox"         /><br />
 			<input type="checkbox"         /><input type="checkbox" checked /><input type="checkbox"         /><br />
 			<input type="checkbox"         /><input type="checkbox" checked /><input type="checkbox"         />
+			<button type="button" onclick="append_char_code(this.parentElement.name)">Add</button>
 			<button type="reset">Reset</button>
 		</form>
 
@@ -562,6 +606,7 @@ function change_output(input_text) {
 			<input type="checkbox" checked /><input type="checkbox"         /><input type="checkbox" checked /><br />
 			<input type="checkbox" checked /><input type="checkbox"         /><input type="checkbox" checked /><br />
 			<input type="checkbox" checked /><input type="checkbox" checked /><input type="checkbox" checked />
+			<button type="button" onclick="append_char_code(this.parentElement.name)">Add</button>
 			<button type="reset">Reset</button>
 		</form>
 
@@ -571,6 +616,7 @@ function change_output(input_text) {
 			<input type="checkbox" checked /><input type="checkbox"         /><input type="checkbox" checked /><br />
 			<input type="checkbox" checked /><input type="checkbox"         /><input type="checkbox" checked /><br />
 			<input type="checkbox"         /><input type="checkbox" checked /><input type="checkbox"         />
+			<button type="button" onclick="append_char_code(this.parentElement.name)">Add</button>
 			<button type="reset">Reset</button>
 		</form>
 
@@ -580,6 +626,7 @@ function change_output(input_text) {
 			<input type="checkbox" checked /><input type="checkbox"         /><input type="checkbox" checked /><br />
 			<input type="checkbox" checked /><input type="checkbox" checked /><input type="checkbox" checked /><br />
 			<input type="checkbox" checked /><input type="checkbox"         /><input type="checkbox" checked />
+			<button type="button" onclick="append_char_code(this.parentElement.name)">Add</button>
 			<button type="reset">Reset</button>
 		</form>
 
@@ -589,6 +636,7 @@ function change_output(input_text) {
 			<input type="checkbox"         /><input type="checkbox" checked /><input type="checkbox"         /><br />
 			<input type="checkbox" checked /><input type="checkbox"         /><input type="checkbox" checked /><br />
 			<input type="checkbox" checked /><input type="checkbox"         /><input type="checkbox" checked />
+			<button type="button" onclick="append_char_code(this.parentElement.name)">Add</button>
 			<button type="reset">Reset</button>
 		</form>
 
@@ -598,6 +646,7 @@ function change_output(input_text) {
 			<input type="checkbox"         /><input type="checkbox" checked /><input type="checkbox"         /><br />
 			<input type="checkbox"         /><input type="checkbox" checked /><input type="checkbox"         /><br />
 			<input type="checkbox"         /><input type="checkbox" checked /><input type="checkbox"         />
+			<button type="button" onclick="append_char_code(this.parentElement.name)">Add</button>
 			<button type="reset">Reset</button>
 		</form>
 
@@ -607,6 +656,7 @@ function change_output(input_text) {
 			<input type="checkbox"         /><input type="checkbox" checked /><input type="checkbox"         /><br />
 			<input type="checkbox" checked /><input type="checkbox"         /><input type="checkbox"         /><br />
 			<input type="checkbox" checked /><input type="checkbox" checked /><input type="checkbox" checked />
+			<button type="button" onclick="append_char_code(this.parentElement.name)">Add</button>
 			<button type="reset">Reset</button>
 		</form>
 
@@ -616,6 +666,7 @@ function change_output(input_text) {
 			<input type="checkbox" checked /><input type="checkbox" checked /><input type="checkbox" checked /><br />
 			<input type="checkbox" checked /><input type="checkbox"         /><input type="checkbox" checked /><br />
 			<input type="checkbox" checked /><input type="checkbox" checked /><input type="checkbox" checked />
+			<button type="button" onclick="append_char_code(this.parentElement.name)">Add</button>
 			<button type="reset">Reset</button>
 		</form>
 
@@ -625,6 +676,7 @@ function change_output(input_text) {
 			<input type="checkbox" checked /><input type="checkbox" checked /><input type="checkbox" checked /><br />
 			<input type="checkbox" checked /><input type="checkbox"         /><input type="checkbox" checked /><br />
 			<input type="checkbox" checked /><input type="checkbox" checked /><input type="checkbox" checked />
+			<button type="button" onclick="append_char_code(this.parentElement.name)">Add</button>
 			<button type="reset">Reset</button>
 		</form>
 
@@ -634,6 +686,7 @@ function change_output(input_text) {
 			<input type="checkbox" checked /><input type="checkbox" checked /><input type="checkbox" checked /><br />
 			<input type="checkbox" checked /><input type="checkbox"         /><input type="checkbox"         /><br />
 			<input type="checkbox" checked /><input type="checkbox" checked /><input type="checkbox" checked />
+			<button type="button" onclick="append_char_code(this.parentElement.name)">Add</button>
 			<button type="reset">Reset</button>
 		</form>
 
@@ -643,6 +696,7 @@ function change_output(input_text) {
 			<input type="checkbox" checked /><input type="checkbox" checked /><input type="checkbox" checked /><br />
 			<input type="checkbox" checked /><input type="checkbox"         /><input type="checkbox" checked /><br />
 			<input type="checkbox" checked /><input type="checkbox" checked /><input type="checkbox" checked />
+			<button type="button" onclick="append_char_code(this.parentElement.name)">Add</button>
 			<button type="reset">Reset</button>
 		</form>
 
@@ -652,6 +706,7 @@ function change_output(input_text) {
 			<input type="checkbox" checked /><input type="checkbox" checked /><input type="checkbox" checked /><br />
 			<input type="checkbox" checked /><input type="checkbox"         /><input type="checkbox"         /><br />
 			<input type="checkbox"         /><input type="checkbox" checked /><input type="checkbox" checked />
+			<button type="button" onclick="append_char_code(this.parentElement.name)">Add</button>
 			<button type="reset">Reset</button>
 		</form>
 
@@ -661,6 +716,7 @@ function change_output(input_text) {
 			<input type="checkbox" checked /><input type="checkbox" checked /><input type="checkbox"         /><br />
 			<input type="checkbox" checked /><input type="checkbox"         /><input type="checkbox"         /><br />
 			<input type="checkbox" checked /><input type="checkbox"         /><input type="checkbox"         />
+			<button type="button" onclick="append_char_code(this.parentElement.name)">Add</button>
 			<button type="reset">Reset</button>
 		</form>
 
@@ -670,6 +726,7 @@ function change_output(input_text) {
 			<input type="checkbox" checked /><input type="checkbox" checked /><input type="checkbox" checked /><br />
 			<input type="checkbox"         /><input type="checkbox"         /><input type="checkbox" checked /><br />
 			<input type="checkbox" checked /><input type="checkbox" checked /><input type="checkbox"         />
+			<button type="button" onclick="append_char_code(this.parentElement.name)">Add</button>
 			<button type="reset">Reset</button>
 		</form>
 
@@ -679,6 +736,7 @@ function change_output(input_text) {
 			<input type="checkbox" checked /><input type="checkbox" checked /><input type="checkbox" checked /><br />
 			<input type="checkbox" checked /><input type="checkbox"         /><input type="checkbox" checked /><br />
 			<input type="checkbox" checked /><input type="checkbox"         /><input type="checkbox" checked />
+			<button type="button" onclick="append_char_code(this.parentElement.name)">Add</button>
 			<button type="reset">Reset</button>
 		</form>
 
@@ -688,6 +746,7 @@ function change_output(input_text) {
 			<input type="checkbox"         /><input type="checkbox" checked /><input type="checkbox"         /><br />
 			<input type="checkbox"         /><input type="checkbox" checked /><input type="checkbox"         /><br />
 			<input type="checkbox"         /><input type="checkbox" checked /><input type="checkbox"         />
+			<button type="button" onclick="append_char_code(this.parentElement.name)">Add</button>
 			<button type="reset">Reset</button>
 		</form>
 
@@ -697,6 +756,7 @@ function change_output(input_text) {
 			<input type="checkbox"         /><input type="checkbox"         /><input type="checkbox" checked /><br />
 			<input type="checkbox" checked /><input type="checkbox"         /><input type="checkbox" checked /><br />
 			<input type="checkbox"         /><input type="checkbox" checked /><input type="checkbox"         />
+			<button type="button" onclick="append_char_code(this.parentElement.name)">Add</button>
 			<button type="reset">Reset</button>
 		</form>
 
@@ -706,6 +766,7 @@ function change_output(input_text) {
 			<input type="checkbox" checked /><input type="checkbox" checked /><input type="checkbox"         /><br />
 			<input type="checkbox" checked /><input type="checkbox"         /><input type="checkbox" checked /><br />
 			<input type="checkbox" checked /><input type="checkbox"         /><input type="checkbox" checked />
+			<button type="button" onclick="append_char_code(this.parentElement.name)">Add</button>
 			<button type="reset">Reset</button>
 		</form>
 
@@ -715,6 +776,7 @@ function change_output(input_text) {
 			<input type="checkbox"         /><input type="checkbox" checked /><input type="checkbox"         /><br />
 			<input type="checkbox"         /><input type="checkbox" checked /><input type="checkbox"         /><br />
 			<input type="checkbox"         /><input type="checkbox" checked /><input type="checkbox"         />
+			<button type="button" onclick="append_char_code(this.parentElement.name)">Add</button>
 			<button type="reset">Reset</button>
 		</form>
 
@@ -724,6 +786,7 @@ function change_output(input_text) {
 			<input type="checkbox" checked /><input type="checkbox" checked /><input type="checkbox" checked /><br />
 			<input type="checkbox" checked /><input type="checkbox"         /><input type="checkbox" checked /><br />
 			<input type="checkbox" checked /><input type="checkbox"         /><input type="checkbox" checked />
+			<button type="button" onclick="append_char_code(this.parentElement.name)">Add</button>
 			<button type="reset">Reset</button>
 		</form>
 
@@ -733,6 +796,7 @@ function change_output(input_text) {
 			<input type="checkbox" checked /><input type="checkbox"         /><input type="checkbox" checked /><br />
 			<input type="checkbox" checked /><input type="checkbox"         /><input type="checkbox" checked /><br />
 			<input type="checkbox" checked /><input type="checkbox"         /><input type="checkbox" checked />
+			<button type="button" onclick="append_char_code(this.parentElement.name)">Add</button>
 			<button type="reset">Reset</button>
 		</form>
 
@@ -742,6 +806,7 @@ function change_output(input_text) {
 			<input type="checkbox" checked /><input type="checkbox" checked /><input type="checkbox" checked /><br />
 			<input type="checkbox" checked /><input type="checkbox"         /><input type="checkbox" checked /><br />
 			<input type="checkbox" checked /><input type="checkbox" checked /><input type="checkbox" checked />
+			<button type="button" onclick="append_char_code(this.parentElement.name)">Add</button>
 			<button type="reset">Reset</button>
 		</form>
 
@@ -751,6 +816,7 @@ function change_output(input_text) {
 			<input type="checkbox" checked /><input type="checkbox"         /><input type="checkbox" checked /><br />
 			<input type="checkbox" checked /><input type="checkbox" checked /><input type="checkbox" checked /><br />
 			<input type="checkbox" checked /><input type="checkbox"         /><input type="checkbox"         />
+			<button type="button" onclick="append_char_code(this.parentElement.name)">Add</button>
 			<button type="reset">Reset</button>
 		</form>
 
@@ -760,6 +826,7 @@ function change_output(input_text) {
 			<input type="checkbox" checked /><input type="checkbox"         /><input type="checkbox" checked /><br />
 			<input type="checkbox" checked /><input type="checkbox" checked /><input type="checkbox" checked /><br />
 			<input type="checkbox"         /><input type="checkbox"         /><input type="checkbox" checked />
+			<button type="button" onclick="append_char_code(this.parentElement.name)">Add</button>
 			<button type="reset">Reset</button>
 		</form>
 
@@ -769,6 +836,7 @@ function change_output(input_text) {
 			<input type="checkbox" checked /><input type="checkbox" checked /><input type="checkbox" checked /><br />
 			<input type="checkbox" checked /><input type="checkbox"         /><input type="checkbox"         /><br />
 			<input type="checkbox" checked /><input type="checkbox"         /><input type="checkbox"         />
+			<button type="button" onclick="append_char_code(this.parentElement.name)">Add</button>
 			<button type="reset">Reset</button>
 		</form>
 
@@ -778,6 +846,7 @@ function change_output(input_text) {
 			<input type="checkbox" checked /><input type="checkbox"         /><input type="checkbox"         /><br />
 			<input type="checkbox"         /><input type="checkbox" checked /><input type="checkbox" checked /><br />
 			<input type="checkbox" checked /><input type="checkbox" checked /><input type="checkbox" checked />
+			<button type="button" onclick="append_char_code(this.parentElement.name)">Add</button>
 			<button type="reset">Reset</button>
 		</form>
 
@@ -787,6 +856,7 @@ function change_output(input_text) {
 			<input type="checkbox" checked /><input type="checkbox" checked /><input type="checkbox" checked /><br />
 			<input type="checkbox"         /><input type="checkbox" checked /><input type="checkbox"         /><br />
 			<input type="checkbox"         /><input type="checkbox" checked /><input type="checkbox"         />
+			<button type="button" onclick="append_char_code(this.parentElement.name)">Add</button>
 			<button type="reset">Reset</button>
 		</form>
 
@@ -796,6 +866,7 @@ function change_output(input_text) {
 			<input type="checkbox" checked /><input type="checkbox"         /><input type="checkbox" checked /><br />
 			<input type="checkbox" checked /><input type="checkbox"         /><input type="checkbox" checked /><br />
 			<input type="checkbox" checked /><input type="checkbox" checked /><input type="checkbox" checked />
+			<button type="button" onclick="append_char_code(this.parentElement.name)">Add</button>
 			<button type="reset">Reset</button>
 		</form>
 
@@ -805,6 +876,7 @@ function change_output(input_text) {
 			<input type="checkbox" checked /><input type="checkbox"         /><input type="checkbox" checked /><br />
 			<input type="checkbox" checked /><input type="checkbox"         /><input type="checkbox" checked /><br />
 			<input type="checkbox"         /><input type="checkbox" checked /><input type="checkbox"         />
+			<button type="button" onclick="append_char_code(this.parentElement.name)">Add</button>
 			<button type="reset">Reset</button>
 		</form>
 
@@ -814,6 +886,7 @@ function change_output(input_text) {
 			<input type="checkbox" checked /><input type="checkbox"         /><input type="checkbox" checked /><br />
 			<input type="checkbox" checked /><input type="checkbox" checked /><input type="checkbox" checked /><br />
 			<input type="checkbox" checked /><input type="checkbox"         /><input type="checkbox" checked />
+			<button type="button" onclick="append_char_code(this.parentElement.name)">Add</button>
 			<button type="reset">Reset</button>
 		</form>
 
@@ -823,6 +896,7 @@ function change_output(input_text) {
 			<input type="checkbox" checked /><input type="checkbox"         /><input type="checkbox" checked /><br />
 			<input type="checkbox"         /><input type="checkbox" checked /><input type="checkbox"         /><br />
 			<input type="checkbox" checked /><input type="checkbox"         /><input type="checkbox" checked />
+			<button type="button" onclick="append_char_code(this.parentElement.name)">Add</button>
 			<button type="reset">Reset</button>
 		</form>
 
@@ -832,6 +906,7 @@ function change_output(input_text) {
 			<input type="checkbox" checked /><input type="checkbox"         /><input type="checkbox" checked /><br />
 			<input type="checkbox"         /><input type="checkbox" checked /><input type="checkbox"         /><br />
 			<input type="checkbox" checked /><input type="checkbox" checked /><input type="checkbox"         />
+			<button type="button" onclick="append_char_code(this.parentElement.name)">Add</button>
 			<button type="reset">Reset</button>
 		</form>
 
@@ -841,6 +916,7 @@ function change_output(input_text) {
 			<input type="checkbox"         /><input type="checkbox"         /><input type="checkbox" checked /><br />
 			<input type="checkbox" checked /><input type="checkbox" checked /><input type="checkbox"         /><br />
 			<input type="checkbox" checked /><input type="checkbox" checked /><input type="checkbox" checked />
+			<button type="button" onclick="append_char_code(this.parentElement.name)">Add</button>
 			<button type="reset">Reset</button>
 		</form>
 
@@ -850,6 +926,7 @@ function change_output(input_text) {
 			<input type="checkbox"         /><input type="checkbox"         /><input type="checkbox"         /><br />
 			<input type="checkbox"         /><input type="checkbox"         /><input type="checkbox"         /><br />
 			<input type="checkbox"         /><input type="checkbox"         /><input type="checkbox"         />
+			<button type="button" onclick="append_char_code(this.parentElement.name)">Add</button>
 			<button type="reset">Reset</button>
 		</form>
 
@@ -859,6 +936,7 @@ function change_output(input_text) {
 			<input type="checkbox"         /><input type="checkbox" checked /><input type="checkbox"         /><br />
 			<input type="checkbox"         /><input type="checkbox"         /><input type="checkbox"         /><br />
 			<input type="checkbox"         /><input type="checkbox" checked /><input type="checkbox"         />
+			<button type="button" onclick="append_char_code(this.parentElement.name)">Add</button>
 			<button type="reset">Reset</button>
 		</form>
 
@@ -868,6 +946,7 @@ function change_output(input_text) {
 			<input type="checkbox"         /><input type="checkbox"         /><input type="checkbox"         /><br />
 			<input type="checkbox"         /><input type="checkbox"         /><input type="checkbox"         /><br />
 			<input type="checkbox"         /><input type="checkbox"         /><input type="checkbox"         />
+			<button type="button" onclick="append_char_code(this.parentElement.name)">Add</button>
 			<button type="reset">Reset</button>
 		</form>
 
@@ -877,6 +956,7 @@ function change_output(input_text) {
 			<input type="checkbox"         /><input type="checkbox"         /><input type="checkbox"         /><br />
 			<input type="checkbox"         /><input type="checkbox"         /><input type="checkbox"         /><br />
 			<input type="checkbox"         /><input type="checkbox"         /><input type="checkbox"         />
+			<button type="button" onclick="append_char_code(this.parentElement.name)">Add</button>
 			<button type="reset">Reset</button>
 		</form>
 
@@ -886,6 +966,7 @@ function change_output(input_text) {
 			<input type="checkbox"         /><input type="checkbox" checked /><input type="checkbox"         /><br />
 			<input type="checkbox"         /><input type="checkbox" checked /><input type="checkbox"         /><br />
 			<input type="checkbox"         /><input type="checkbox"         /><input type="checkbox" checked />
+			<button type="button" onclick="append_char_code(this.parentElement.name)">Add</button>
 			<button type="reset">Reset</button>
 		</form>
 
@@ -895,6 +976,7 @@ function change_output(input_text) {
 			<input type="checkbox"         /><input type="checkbox" checked /><input type="checkbox"         /><br />
 			<input type="checkbox"         /><input type="checkbox" checked /><input type="checkbox"         /><br />
 			<input type="checkbox" checked /><input type="checkbox"         /><input type="checkbox"         />
+			<button type="button" onclick="append_char_code(this.parentElement.name)">Add</button>
 			<button type="reset">Reset</button>
 		</form>
 
@@ -904,6 +986,7 @@ function change_output(input_text) {
 			<input type="checkbox" checked /><input type="checkbox" checked /><input type="checkbox" checked /><br />
 			<input type="checkbox"         /><input type="checkbox" checked /><input type="checkbox"         /><br />
 			<input type="checkbox"         /><input type="checkbox"         /><input type="checkbox"         />
+			<button type="button" onclick="append_char_code(this.parentElement.name)">Add</button>
 			<button type="reset">Reset</button>
 		</form>
 
@@ -913,6 +996,7 @@ function change_output(input_text) {
 			<input type="checkbox"         /><input type="checkbox"         /><input type="checkbox"         /><br />
 			<input type="checkbox"         /><input type="checkbox" checked /><input type="checkbox"         /><br />
 			<input type="checkbox" checked /><input type="checkbox"         /><input type="checkbox"         />
+			<button type="button" onclick="append_char_code(this.parentElement.name)">Add</button>
 			<button type="reset">Reset</button>
 		</form>
 
@@ -922,6 +1006,7 @@ function change_output(input_text) {
 			<input type="checkbox" checked /><input type="checkbox" checked /><input type="checkbox" checked /><br />
 			<input type="checkbox"         /><input type="checkbox"         /><input type="checkbox"         /><br />
 			<input type="checkbox"         /><input type="checkbox"         /><input type="checkbox"         />
+			<button type="button" onclick="append_char_code(this.parentElement.name)">Add</button>
 			<button type="reset">Reset</button>
 		</form>
 
@@ -931,6 +1016,7 @@ function change_output(input_text) {
 			<input type="checkbox"         /><input type="checkbox"         /><input type="checkbox"         /><br />
 			<input type="checkbox"         /><input type="checkbox"         /><input type="checkbox"         /><br />
 			<input type="checkbox"         /><input type="checkbox" checked /><input type="checkbox"         />
+			<button type="button" onclick="append_char_code(this.parentElement.name)">Add</button>
 			<button type="reset">Reset</button>
 		</form>
 
@@ -940,6 +1026,7 @@ function change_output(input_text) {
 			<input type="checkbox"         /><input type="checkbox" checked /><input type="checkbox"         /><br />
 			<input type="checkbox" checked /><input type="checkbox" checked /><input type="checkbox"         /><br />
 			<input type="checkbox" checked /><input type="checkbox"         /><input type="checkbox"         />
+			<button type="button" onclick="append_char_code(this.parentElement.name)">Add</button>
 			<button type="reset">Reset</button>
 		</form>
 
@@ -949,6 +1036,7 @@ function change_output(input_text) {
 			<input type="checkbox"         /><input type="checkbox"         /><input type="checkbox"         /><br />
 			<input type="checkbox"         /><input type="checkbox" checked /><input type="checkbox"         /><br />
 			<input type="checkbox"         /><input type="checkbox"         /><input type="checkbox"         />
+			<button type="button" onclick="append_char_code(this.parentElement.name)">Add</button>
 			<button type="reset">Reset</button>
 		</form>
 
@@ -958,6 +1046,7 @@ function change_output(input_text) {
 			<input type="checkbox"         /><input type="checkbox"         /><input type="checkbox"         /><br />
 			<input type="checkbox"         /><input type="checkbox" checked /><input type="checkbox"         /><br />
 			<input type="checkbox" checked /><input type="checkbox"         /><input type="checkbox"         />
+			<button type="button" onclick="append_char_code(this.parentElement.name)">Add</button>
 			<button type="reset">Reset</button>
 		</form>
 
@@ -967,6 +1056,7 @@ function change_output(input_text) {
 			<input type="checkbox" checked /><input type="checkbox"         /><input type="checkbox"         /><br />
 			<input type="checkbox"         /><input type="checkbox" checked /><input type="checkbox"         /><br />
 			<input type="checkbox"         /><input type="checkbox"         /><input type="checkbox" checked />
+			<button type="button" onclick="append_char_code(this.parentElement.name)">Add</button>
 			<button type="reset">Reset</button>
 		</form>
 
@@ -976,6 +1066,7 @@ function change_output(input_text) {
 			<input type="checkbox"         /><input type="checkbox"         /><input type="checkbox"         /><br />
 			<input type="checkbox" checked /><input type="checkbox" checked /><input type="checkbox" checked /><br />
 			<input type="checkbox"         /><input type="checkbox"         /><input type="checkbox"         />
+			<button type="button" onclick="append_char_code(this.parentElement.name)">Add</button>
 			<button type="reset">Reset</button>
 		</form>
 
@@ -985,6 +1076,7 @@ function change_output(input_text) {
 			<input type="checkbox"         /><input type="checkbox"         /><input type="checkbox" checked /><br />
 			<input type="checkbox"         /><input type="checkbox" checked /><input type="checkbox"         /><br />
 			<input type="checkbox" checked /><input type="checkbox"         /><input type="checkbox"         />
+			<button type="button" onclick="append_char_code(this.parentElement.name)">Add</button>
 			<button type="reset">Reset</button>
 		</form>
 
@@ -994,6 +1086,7 @@ function change_output(input_text) {
 			<input type="checkbox"         /><input type="checkbox"         /><input type="checkbox" checked /><br />
 			<input type="checkbox"         /><input type="checkbox" checked /><input type="checkbox"         /><br />
 			<input type="checkbox"         /><input type="checkbox" checked /><input type="checkbox"         />
+			<button type="button" onclick="append_char_code(this.parentElement.name)">Add</button>
 			<button type="reset">Reset</button>
 		</form>
 
@@ -1003,6 +1096,7 @@ function change_output(input_text) {
 			<input type="checkbox"         /><input type="checkbox" checked /><input type="checkbox"         /><br />
 			<input type="checkbox"         /><input type="checkbox" checked /><input type="checkbox"         /><br />
 			<input type="checkbox"         /><input type="checkbox" checked /><input type="checkbox" checked />
+			<button type="button" onclick="append_char_code(this.parentElement.name)">Add</button>
 			<button type="reset">Reset</button>
 		</form>
 
@@ -1012,6 +1106,7 @@ function change_output(input_text) {
 			<input type="checkbox"         /><input type="checkbox" checked /><input type="checkbox"         /><br />
 			<input type="checkbox"         /><input type="checkbox" checked /><input type="checkbox" checked /><br />
 			<input type="checkbox"         /><input type="checkbox"         /><input type="checkbox" checked />
+			<button type="button" onclick="append_char_code(this.parentElement.name)">Add</button>
 			<button type="reset">Reset</button>
 		</form>
 
@@ -1021,6 +1116,7 @@ function change_output(input_text) {
 			<input type="checkbox"         /><input type="checkbox" checked /><input type="checkbox"         /><br />
 			<input type="checkbox"         /><input type="checkbox" checked /><input type="checkbox"         /><br />
 			<input type="checkbox" checked /><input type="checkbox" checked /><input type="checkbox"         />
+			<button type="button" onclick="append_char_code(this.parentElement.name)">Add</button>
 			<button type="reset">Reset</button>
 		</form>
 
@@ -1030,6 +1126,7 @@ function change_output(input_text) {
 			<input type="checkbox"         /><input type="checkbox"         /><input type="checkbox"         /><br />
 			<input type="checkbox"         /><input type="checkbox"         /><input type="checkbox"         /><br />
 			<input type="checkbox"         /><input type="checkbox"         /><input type="checkbox"         />
+			<button type="button" onclick="append_char_code(this.parentElement.name)">Add</button>
 			<button type="reset">Reset</button>
 		</form>
 
@@ -1039,6 +1136,7 @@ function change_output(input_text) {
 			<input type="checkbox"         /><input type="checkbox"         /><input type="checkbox"         /><br />
 			<input type="checkbox"         /><input type="checkbox"         /><input type="checkbox"         /><br />
 			<input type="checkbox" checked /><input type="checkbox" checked /><input type="checkbox" checked />
+			<button type="button" onclick="append_char_code(this.parentElement.name)">Add</button>
 			<button type="reset">Reset</button>
 		</form>
 
@@ -1048,6 +1146,7 @@ function change_output(input_text) {
 			<input type="checkbox"         /><input type="checkbox"         /><input type="checkbox"         /><br />
 			<input type="checkbox"         /><input type="checkbox"         /><input type="checkbox"         /><br />
 			<input type="checkbox"         /><input type="checkbox"         /><input type="checkbox"         />
+			<button type="button" onclick="append_char_code(this.parentElement.name)">Add</button>
 			<button type="reset">Reset</button>
 		</form>
 
@@ -1057,6 +1156,7 @@ function change_output(input_text) {
 			<input type="checkbox" checked /><input type="checkbox"         /><input type="checkbox"         /><br />
 			<input type="checkbox"         /><input type="checkbox" checked /><input type="checkbox"         /><br />
 			<input type="checkbox"         /><input type="checkbox" checked /><input type="checkbox" checked />
+			<button type="button" onclick="append_char_code(this.parentElement.name)">Add</button>
 			<button type="reset">Reset</button>
 		</form>
 
@@ -1066,6 +1166,7 @@ function change_output(input_text) {
 			<input type="checkbox"         /><input type="checkbox" checked /><input type="checkbox"         /><br />
 			<input type="checkbox"         /><input type="checkbox" checked /><input type="checkbox"         /><br />
 			<input type="checkbox"         /><input type="checkbox" checked /><input type="checkbox"         />
+			<button type="button" onclick="append_char_code(this.parentElement.name)">Add</button>
 			<button type="reset">Reset</button>
 		</form>
 
@@ -1075,6 +1176,7 @@ function change_output(input_text) {
 			<input type="checkbox"         /><input type="checkbox"         /><input type="checkbox" checked /><br />
 			<input type="checkbox"         /><input type="checkbox" checked /><input type="checkbox"         /><br />
 			<input type="checkbox" checked /><input type="checkbox" checked /><input type="checkbox"         />
+			<button type="button" onclick="append_char_code(this.parentElement.name)">Add</button>
 			<button type="reset">Reset</button>
 		</form>
 
@@ -1084,6 +1186,7 @@ function change_output(input_text) {
 			<input type="checkbox"         /><input type="checkbox" checked /><input type="checkbox"         /><br />
 			<input type="checkbox"         /><input type="checkbox" checked /><input type="checkbox"         /><br />
 			<input type="checkbox"         /><input type="checkbox" checked /><input type="checkbox"         />
+			<button type="button" onclick="append_char_code(this.parentElement.name)">Add</button>
 			<button type="reset">Reset</button>
 		</form>
 
@@ -1093,6 +1196,7 @@ function change_output(input_text) {
 			<input type="checkbox"         /><input type="checkbox"         /><input type="checkbox"         /><br />
 			<input type="checkbox"         /><input type="checkbox" checked /><input type="checkbox"         /><br />
 			<input type="checkbox"         /><input type="checkbox" checked /><input type="checkbox"         />
+			<button type="button" onclick="append_char_code(this.parentElement.name)">Add</button>
 			<button type="reset">Reset</button>
 		</form>
 
@@ -1102,6 +1206,7 @@ function change_output(input_text) {
 			<input type="checkbox"         /><input type="checkbox"         /><input type="checkbox"         /><br />
 			<input type="checkbox"         /><input type="checkbox"         /><input type="checkbox"         /><br />
 			<input type="checkbox"         /><input type="checkbox"         /><input type="checkbox"         />
+			<button type="button" onclick="append_char_code(this.parentElement.name)">Add</button>
 			<button type="reset">Reset</button>
 		</form>
 
@@ -1111,6 +1216,7 @@ function change_output(input_text) {
 			<input type="checkbox"         /><input type="checkbox"         /><input type="checkbox"         /><br />
 			<input type="checkbox"         /><input type="checkbox"         /><input type="checkbox"         /><br />
 			<input type="checkbox"         /><input type="checkbox"         /><input type="checkbox"         />
+			<button type="button" onclick="append_char_code(this.parentElement.name)">Add</button>
 			<button type="reset">Reset</button>
 		</form>
 
@@ -1120,6 +1226,7 @@ function change_output(input_text) {
 			<input type="checkbox"         /><input type="checkbox"         /><input type="checkbox"         /><br />
 			<input type="checkbox"         /><input type="checkbox"         /><input type="checkbox"         /><br />
 			<input type="checkbox"         /><input type="checkbox"         /><input type="checkbox"         />
+			<button type="button" onclick="append_char_code(this.parentElement.name)">Add</button>
 			<button type="reset">Reset</button>
 		</form>
 
@@ -1129,6 +1236,7 @@ function change_output(input_text) {
 			<input type="checkbox"         /><input type="checkbox" checked /><input type="checkbox"         /><br />
 			<input type="checkbox"         /><input type="checkbox"         /><input type="checkbox"         /><br />
 			<input type="checkbox"         /><input type="checkbox"         /><input type="checkbox"         />
+			<button type="button" onclick="append_char_code(this.parentElement.name)">Add</button>
 			<button type="reset">Reset</button>
 		</form>
 
@@ -1138,6 +1246,7 @@ function change_output(input_text) {
 			<input type="checkbox" checked /><input type="checkbox"         /><input type="checkbox"         /><br />
 			<input type="checkbox" checked /><input type="checkbox"         /><input type="checkbox" checked /><br />
 			<input type="checkbox"         /><input type="checkbox" checked /><input type="checkbox"         />
+			<button type="button" onclick="append_char_code(this.parentElement.name)">Add</button>
 			<button type="reset">Reset</button>
 		</form>
 
@@ -1147,6 +1256,7 @@ function change_output(input_text) {
 			<input type="checkbox"         /><input type="checkbox" checked /><input type="checkbox"         /><br />
 			<input type="checkbox" checked /><input type="checkbox"         /><input type="checkbox" checked /><br />
 			<input type="checkbox"         /><input type="checkbox"         /><input type="checkbox"         />
+			<button type="button" onclick="append_char_code(this.parentElement.name)">Add</button>
 			<button type="reset">Reset</button>
 		</form>
 
@@ -1156,6 +1266,7 @@ function change_output(input_text) {
 			<input type="checkbox"         /><input type="checkbox" checked /><input type="checkbox"         /><br />
 			<input type="checkbox"         /><input type="checkbox" checked /><input type="checkbox"         /><br />
 			<input type="checkbox"         /><input type="checkbox" checked /><input type="checkbox"         />
+			<button type="button" onclick="append_char_code(this.parentElement.name)">Add</button>
 			<button type="reset">Reset</button>
 		</form>
 
@@ -1165,6 +1276,7 @@ function change_output(input_text) {
 			<input type="checkbox" checked /><input type="checkbox" checked /><input type="checkbox" checked /><br />
 			<input type="checkbox" checked /><input type="checkbox"         /><input type="checkbox" checked /><br />
 			<input type="checkbox" checked /><input type="checkbox" checked /><input type="checkbox" checked />
+			<button type="button" onclick="append_char_code(this.parentElement.name)">Add</button>
 			<button type="reset">Reset</button>
 		</form>
 
@@ -1174,6 +1286,7 @@ function change_output(input_text) {
 			<input type="checkbox" checked /><input type="checkbox" checked /><input type="checkbox" checked /><br />
 			<input type="checkbox"         /><input type="checkbox"         /><input type="checkbox"         /><br />
 			<input type="checkbox"         /><input type="checkbox" checked /><input type="checkbox"         />
+			<button type="button" onclick="append_char_code(this.parentElement.name)">Add</button>
 			<button type="reset">Reset</button>
 		</form>
 
@@ -1183,6 +1296,7 @@ function change_output(input_text) {
 			<input type="checkbox" checked /><input type="checkbox"         /><input type="checkbox" checked /><br />
 			<input type="checkbox" checked /><input type="checkbox"         /><input type="checkbox" checked /><br />
 			<input type="checkbox" checked /><input type="checkbox" checked /><input type="checkbox" checked />
+			<button type="button" onclick="append_char_code(this.parentElement.name)">Add</button>
 			<button type="reset">Reset</button>
 		</form>
 
@@ -1192,6 +1306,7 @@ function change_output(input_text) {
 			<input type="checkbox"         /><input type="checkbox" checked /><input type="checkbox"         /><br />
 			<input type="checkbox"         /><input type="checkbox" checked /><input type="checkbox"         /><br />
 			<input type="checkbox"         /><input type="checkbox" checked /><input type="checkbox"         />
+			<button type="button" onclick="append_char_code(this.parentElement.name)">Add</button>
 			<button type="reset">Reset</button>
 		</form>
 
@@ -1201,6 +1316,7 @@ function change_output(input_text) {
 			<input type="checkbox" checked /><input type="checkbox" checked /><input type="checkbox" checked /><br />
 			<input type="checkbox" checked /><input type="checkbox"         /><input type="checkbox" checked /><br />
 			<input type="checkbox" checked /><input type="checkbox" checked /><input type="checkbox" checked />
+			<button type="button" onclick="append_char_code(this.parentElement.name)">Add</button>
 			<button type="reset">Reset</button>
 		</form>
 
@@ -1210,6 +1326,7 @@ function change_output(input_text) {
 			<input type="checkbox" checked /><input type="checkbox"         /><input type="checkbox" checked /><br />
 			<input type="checkbox" checked /><input type="checkbox"         /><input type="checkbox" checked /><br />
 			<input type="checkbox" checked /><input type="checkbox" checked /><input type="checkbox" checked />
+			<button type="button" onclick="append_char_code(this.parentElement.name)">Add</button>
 			<button type="reset">Reset</button>
 		</form>
 
@@ -1219,6 +1336,7 @@ function change_output(input_text) {
 			<input type="checkbox" checked /><input type="checkbox"         /><input type="checkbox" checked /><br />
 			<input type="checkbox"         /><input type="checkbox" checked /><input type="checkbox" checked /><br />
 			<input type="checkbox" checked /><input type="checkbox" checked /><input type="checkbox"         />
+			<button type="button" onclick="append_char_code(this.parentElement.name)">Add</button>
 			<button type="reset">Reset</button>
 		</form>
 
@@ -1228,6 +1346,7 @@ function change_output(input_text) {
 			<input type="checkbox" checked /><input type="checkbox"         /><input type="checkbox"         /><br />
 			<input type="checkbox" checked /><input type="checkbox"         /><input type="checkbox"         /><br />
 			<input type="checkbox" checked /><input type="checkbox"         /><input type="checkbox"         />
+			<button type="button" onclick="append_char_code(this.parentElement.name)">Add</button>
 			<button type="reset">Reset</button>
 		</form>
 
@@ -1237,6 +1356,7 @@ function change_output(input_text) {
 			<input type="checkbox" checked /><input type="checkbox" checked /><input type="checkbox" checked /><br />
 			<input type="checkbox" checked /><input type="checkbox"         /><input type="checkbox" checked /><br />
 			<input type="checkbox"         /><input type="checkbox" checked /><input type="checkbox"         />
+			<button type="button" onclick="append_char_code(this.parentElement.name)">Add</button>
 			<button type="reset">Reset</button>
 		</form>
 
@@ -1246,6 +1366,7 @@ function change_output(input_text) {
 			<input type="checkbox" checked /><input type="checkbox"         /><input type="checkbox" checked /><br />
 			<input type="checkbox" checked /><input type="checkbox"         /><input type="checkbox" checked /><br />
 			<input type="checkbox" checked /><input type="checkbox"         /><input type="checkbox" checked />
+			<button type="button" onclick="append_char_code(this.parentElement.name)">Add</button>
 			<button type="reset">Reset</button>
 		</form>
 
@@ -1255,6 +1376,7 @@ function change_output(input_text) {
 			<input type="checkbox" checked /><input type="checkbox"         /><input type="checkbox" checked /><br />
 			<input type="checkbox" checked /><input type="checkbox"         /><input type="checkbox" checked /><br />
 			<input type="checkbox" checked /><input type="checkbox"         /><input type="checkbox" checked />
+			<button type="button" onclick="append_char_code(this.parentElement.name)">Add</button>
 			<button type="reset">Reset</button>
 		</form>
 
@@ -1264,6 +1386,7 @@ function change_output(input_text) {
 			<input type="checkbox"         /><input type="checkbox" checked /><input type="checkbox"         /><br />
 			<input type="checkbox" checked /><input type="checkbox"         /><input type="checkbox"         /><br />
 			<input type="checkbox" checked /><input type="checkbox" checked /><input type="checkbox" checked />
+			<button type="button" onclick="append_char_code(this.parentElement.name)">Add</button>
 			<button type="reset">Reset</button>
 		</form>
 
@@ -1273,6 +1396,7 @@ function change_output(input_text) {
 			<input type="checkbox" checked /><input type="checkbox" checked /><input type="checkbox" checked /><br />
 			<input type="checkbox"         /><input type="checkbox"         /><input type="checkbox"         /><br />
 			<input type="checkbox" checked /><input type="checkbox" checked /><input type="checkbox" checked />
+			<button type="button" onclick="append_char_code(this.parentElement.name)">Add</button>
 			<button type="reset">Reset</button>
 		</form>
 
@@ -1282,6 +1406,7 @@ function change_output(input_text) {
 			<input type="checkbox" checked /><input type="checkbox" checked /><input type="checkbox" checked /><br />
 			<input type="checkbox" checked /><input type="checkbox"         /><input type="checkbox" checked /><br />
 			<input type="checkbox" checked /><input type="checkbox" checked /><input type="checkbox" checked />
+			<button type="button" onclick="append_char_code(this.parentElement.name)">Add</button>
 			<button type="reset">Reset</button>
 		</form>
 
@@ -1291,6 +1416,7 @@ function change_output(input_text) {
 			<input type="checkbox" checked /><input type="checkbox" checked /><input type="checkbox" checked /><br />
 			<input type="checkbox"         /><input type="checkbox"         /><input type="checkbox"         /><br />
 			<input type="checkbox"         /><input type="checkbox"         /><input type="checkbox"         />
+			<button type="button" onclick="append_char_code(this.parentElement.name)">Add</button>
 			<button type="reset">Reset</button>
 		</form>
 
@@ -1300,6 +1426,7 @@ function change_output(input_text) {
 			<input type="checkbox"         /><input type="checkbox"         /><input type="checkbox"         /><br />
 			<input type="checkbox"         /><input type="checkbox"         /><input type="checkbox"         /><br />
 			<input type="checkbox" checked /><input type="checkbox" checked /><input type="checkbox" checked />
+			<button type="button" onclick="append_char_code(this.parentElement.name)">Add</button>
 			<button type="reset">Reset</button>
 		</form>
 
@@ -1309,6 +1436,7 @@ function change_output(input_text) {
 			<input type="checkbox"         /><input type="checkbox"         /><input type="checkbox"         /><br />
 			<input type="checkbox" checked /><input type="checkbox" checked /><input type="checkbox" checked /><br />
 			<input type="checkbox" checked /><input type="checkbox" checked /><input type="checkbox" checked />
+			<button type="button" onclick="append_char_code(this.parentElement.name)">Add</button>
 			<button type="reset">Reset</button>
 		</form>
 
@@ -1318,6 +1446,7 @@ function change_output(input_text) {
 			<input type="checkbox" checked /><input type="checkbox" checked /><input type="checkbox" checked /><br />
 			<input type="checkbox" checked /><input type="checkbox" checked /><input type="checkbox" checked /><br />
 			<input type="checkbox" checked /><input type="checkbox" checked /><input type="checkbox" checked />
+			<button type="button" onclick="append_char_code(this.parentElement.name)">Add</button>
 			<button type="reset">Reset</button>
 		</form>
 
@@ -1327,6 +1456,7 @@ function change_output(input_text) {
 			<input type="checkbox" checked /><input type="checkbox" checked /><input type="checkbox" checked /><br />
 			<input type="checkbox" checked /><input type="checkbox" checked /><input type="checkbox" checked /><br />
 			<input type="checkbox" checked /><input type="checkbox" checked /><input type="checkbox" checked />
+			<button type="button" onclick="append_char_code(this.parentElement.name)">Add</button>
 			<button type="reset">Reset</button>
 		</form>
 
@@ -1336,6 +1466,7 @@ function change_output(input_text) {
 			<input type="checkbox" checked /><input type="checkbox" checked /><input type="checkbox" checked /><br />
 			<input type="checkbox" checked /><input type="checkbox" checked /><input type="checkbox" checked /><br />
 			<input type="checkbox" checked /><input type="checkbox" checked /><input type="checkbox" checked />
+			<button type="button" onclick="append_char_code(this.parentElement.name)">Add</button>
 			<button type="reset">Reset</button>
 		</form>
 
@@ -1345,6 +1476,7 @@ function change_output(input_text) {
 			<input type="checkbox" checked /><input type="checkbox" checked /><input type="checkbox"         /><br />
 			<input type="checkbox" checked /><input type="checkbox" checked /><input type="checkbox"         /><br />
 			<input type="checkbox" checked /><input type="checkbox" checked /><input type="checkbox"         />
+			<button type="button" onclick="append_char_code(this.parentElement.name)">Add</button>
 			<button type="reset">Reset</button>
 		</form>
 
@@ -1354,6 +1486,7 @@ function change_output(input_text) {
 			<input type="checkbox" checked /><input type="checkbox"         /><input type="checkbox"         /><br />
 			<input type="checkbox" checked /><input type="checkbox"         /><input type="checkbox"         /><br />
 			<input type="checkbox" checked /><input type="checkbox"         /><input type="checkbox"         />
+			<button type="button" onclick="append_char_code(this.parentElement.name)">Add</button>
 			<button type="reset">Reset</button>
 		</form>
 
@@ -1363,6 +1496,7 @@ function change_output(input_text) {
 			<input type="checkbox" checked /><input type="checkbox"         /><input type="checkbox" checked /><br />
 			<input type="checkbox"         /><input type="checkbox" checked /><input type="checkbox"         /><br />
 			<input type="checkbox" checked /><input type="checkbox"         /><input type="checkbox" checked />
+			<button type="button" onclick="append_char_code(this.parentElement.name)">Add</button>
 			<button type="reset">Reset</button>
 		</form>
 
@@ -1372,6 +1506,7 @@ function change_output(input_text) {
 			<input type="checkbox" checked /><input type="checkbox" checked /><input type="checkbox" checked /><br />
 			<input type="checkbox" checked /><input type="checkbox" checked /><input type="checkbox" checked /><br />
 			<input type="checkbox"         /><input type="checkbox"         /><input type="checkbox"         />
+			<button type="button" onclick="append_char_code(this.parentElement.name)">Add</button>
 			<button type="reset">Reset</button>
 		</form>
 
@@ -1381,6 +1516,7 @@ function change_output(input_text) {
 			<input type="checkbox" checked /><input type="checkbox"         /><input type="checkbox" checked /><br />
 			<input type="checkbox" checked /><input type="checkbox" checked /><input type="checkbox" checked /><br />
 			<input type="checkbox"         /><input type="checkbox"         /><input type="checkbox"         />
+			<button type="button" onclick="append_char_code(this.parentElement.name)">Add</button>
 			<button type="reset">Reset</button>
 		</form>
 
@@ -1390,6 +1526,7 @@ function change_output(input_text) {
 			<input type="checkbox"         /><input type="checkbox" checked /><input type="checkbox"         /><br />
 			<input type="checkbox" checked /><input type="checkbox" checked /><input type="checkbox" checked /><br />
 			<input type="checkbox"         /><input type="checkbox"         /><input type="checkbox"         />
+			<button type="button" onclick="append_char_code(this.parentElement.name)">Add</button>
 			<button type="reset">Reset</button>
 		</form>
 
@@ -1399,6 +1536,7 @@ function change_output(input_text) {
 			<input type="checkbox" checked /><input type="checkbox" checked /><input type="checkbox" checked /><br />
 			<input type="checkbox" checked /><input type="checkbox" checked /><input type="checkbox"         /><br />
 			<input type="checkbox" checked /><input type="checkbox"         /><input type="checkbox"         />
+			<button type="button" onclick="append_char_code(this.parentElement.name)">Add</button>
 			<button type="reset">Reset</button>
 		</form>
 
@@ -1408,6 +1546,7 @@ function change_output(input_text) {
 			<input type="checkbox" checked /><input type="checkbox"         /><input type="checkbox" checked /><br />
 			<input type="checkbox" checked /><input type="checkbox" checked /><input type="checkbox"         /><br />
 			<input type="checkbox" checked /><input type="checkbox"         /><input type="checkbox"         />
+			<button type="button" onclick="append_char_code(this.parentElement.name)">Add</button>
 			<button type="reset">Reset</button>
 		</form>
 
@@ -1417,6 +1556,7 @@ function change_output(input_text) {
 			<input type="checkbox" checked /><input type="checkbox" checked /><input type="checkbox"         /><br />
 			<input type="checkbox" checked /><input type="checkbox"         /><input type="checkbox"         /><br />
 			<input type="checkbox"         /><input type="checkbox"         /><input type="checkbox"         />
+			<button type="button" onclick="append_char_code(this.parentElement.name)">Add</button>
 			<button type="reset">Reset</button>
 		</form>
 
@@ -1426,6 +1566,7 @@ function change_output(input_text) {
 			<input type="checkbox"         /><input type="checkbox" checked /><input type="checkbox"         /><br />
 			<input type="checkbox"         /><input type="checkbox"         /><input type="checkbox"         /><br />
 			<input type="checkbox"         /><input type="checkbox"         /><input type="checkbox"         />
+			<button type="button" onclick="append_char_code(this.parentElement.name)">Add</button>
 			<button type="reset">Reset</button>
 		</form>
 
@@ -1435,6 +1576,7 @@ function change_output(input_text) {
 			<input type="checkbox" checked /><input type="checkbox" checked /><input type="checkbox" checked /><br />
 			<input type="checkbox"         /><input type="checkbox" checked /><input type="checkbox" checked /><br />
 			<input type="checkbox"         /><input type="checkbox"         /><input type="checkbox" checked />
+			<button type="button" onclick="append_char_code(this.parentElement.name)">Add</button>
 			<button type="reset">Reset</button>
 		</form>
 
@@ -1444,6 +1586,7 @@ function change_output(input_text) {
 			<input type="checkbox" checked /><input type="checkbox"         /><input type="checkbox" checked /><br />
 			<input type="checkbox"         /><input type="checkbox" checked /><input type="checkbox" checked /><br />
 			<input type="checkbox"         /><input type="checkbox"         /><input type="checkbox" checked />
+			<button type="button" onclick="append_char_code(this.parentElement.name)">Add</button>
 			<button type="reset">Reset</button>
 		</form>
 
@@ -1453,6 +1596,7 @@ function change_output(input_text) {
 			<input type="checkbox"         /><input type="checkbox" checked /><input type="checkbox" checked /><br />
 			<input type="checkbox"         /><input type="checkbox"         /><input type="checkbox" checked /><br />
 			<input type="checkbox"         /><input type="checkbox"         /><input type="checkbox"         />
+			<button type="button" onclick="append_char_code(this.parentElement.name)">Add</button>
 			<button type="reset">Reset</button>
 		</form>
 
@@ -1462,6 +1606,7 @@ function change_output(input_text) {
 			<input type="checkbox" checked /><input type="checkbox"         /><input type="checkbox" checked /><br />
 			<input type="checkbox"         /><input type="checkbox" checked /><input type="checkbox"         /><br />
 			<input type="checkbox"         /><input type="checkbox" checked /><input type="checkbox"         />
+			<button type="button" onclick="append_char_code(this.parentElement.name)">Add</button>
 			<button type="reset">Reset</button>
 		</form>
 
@@ -1471,6 +1616,7 @@ function change_output(input_text) {
 			<input type="checkbox" checked /><input type="checkbox"         /><input type="checkbox" checked /><br />
 			<input type="checkbox"         /><input type="checkbox" checked /><input type="checkbox"         /><br />
 			<input type="checkbox"         /><input type="checkbox"         /><input type="checkbox"         />
+			<button type="button" onclick="append_char_code(this.parentElement.name)">Add</button>
 			<button type="reset">Reset</button>
 		</form>
 
@@ -1480,6 +1626,7 @@ function change_output(input_text) {
 			<input type="checkbox"         /><input type="checkbox" checked /><input type="checkbox"         /><br />
 			<input type="checkbox" checked /><input type="checkbox"         /><input type="checkbox" checked /><br />
 			<input type="checkbox" checked /><input type="checkbox" checked /><input type="checkbox" checked />
+			<button type="button" onclick="append_char_code(this.parentElement.name)">Add</button>
 			<button type="reset">Reset</button>
 		</form>
 
@@ -1489,6 +1636,7 @@ function change_output(input_text) {
 			<input type="checkbox"         /><input type="checkbox"         /><input type="checkbox" checked /><br />
 			<input type="checkbox"         /><input type="checkbox" checked /><input type="checkbox" checked /><br />
 			<input type="checkbox" checked /><input type="checkbox" checked /><input type="checkbox" checked />
+			<button type="button" onclick="append_char_code(this.parentElement.name)">Add</button>
 			<button type="reset">Reset</button>
 		</form>
 
@@ -1498,6 +1646,7 @@ function change_output(input_text) {
 			<input type="checkbox" checked /><input type="checkbox"         /><input type="checkbox"         /><br />
 			<input type="checkbox" checked /><input type="checkbox" checked /><input type="checkbox"         /><br />
 			<input type="checkbox" checked /><input type="checkbox" checked /><input type="checkbox" checked />
+			<button type="button" onclick="append_char_code(this.parentElement.name)">Add</button>
 			<button type="reset">Reset</button>
 		</form>
 
@@ -1507,6 +1656,7 @@ function change_output(input_text) {
 			<input type="checkbox" checked /><input type="checkbox"         /><input type="checkbox"         /><br />
 			<input type="checkbox"         /><input type="checkbox"         /><input type="checkbox"         /><br />
 			<input type="checkbox"         /><input type="checkbox"         /><input type="checkbox"         />
+			<button type="button" onclick="append_char_code(this.parentElement.name)">Add</button>
 			<button type="reset">Reset</button>
 		</form>
 
@@ -1516,6 +1666,7 @@ function change_output(input_text) {
 			<input type="checkbox"         /><input type="checkbox"         /><input type="checkbox" checked /><br />
 			<input type="checkbox"         /><input type="checkbox"         /><input type="checkbox"         /><br />
 			<input type="checkbox"         /><input type="checkbox"         /><input type="checkbox"         />
+			<button type="button" onclick="append_char_code(this.parentElement.name)">Add</button>
 			<button type="reset">Reset</button>
 		</form>
 
@@ -1525,6 +1676,7 @@ function change_output(input_text) {
 			<input type="checkbox" checked /><input type="checkbox" checked /><input type="checkbox" checked /><br />
 			<input type="checkbox" checked /><input type="checkbox" checked /><input type="checkbox" checked /><br />
 			<input type="checkbox" checked /><input type="checkbox" checked /><input type="checkbox" checked />
+			<button type="button" onclick="append_char_code(this.parentElement.name)">Add</button>
 			<button type="reset">Reset</button>
 		</form>
 
@@ -1534,6 +1686,7 @@ function change_output(input_text) {
 			<input type="checkbox" checked /><input type="checkbox" checked /><input type="checkbox" checked /><br />
 			<input type="checkbox"         /><input type="checkbox"         /><input type="checkbox"         /><br />
 			<input type="checkbox" checked /><input type="checkbox" checked /><input type="checkbox" checked />
+			<button type="button" onclick="append_char_code(this.parentElement.name)">Add</button>
 			<button type="reset">Reset</button>
 		</form>
 
@@ -1543,6 +1696,7 @@ function change_output(input_text) {
 			<input type="checkbox" checked /><input type="checkbox" checked /><input type="checkbox" checked /><br />
 			<input type="checkbox"         /><input type="checkbox"         /><input type="checkbox"         /><br />
 			<input type="checkbox" checked /><input type="checkbox" checked /><input type="checkbox" checked />
+			<button type="button" onclick="append_char_code(this.parentElement.name)">Add</button>
 			<button type="reset">Reset</button>
 		</form>
 
@@ -1552,6 +1706,7 @@ function change_output(input_text) {
 			<input type="checkbox" checked /><input type="checkbox"         /><input type="checkbox" checked /><br />
 			<input type="checkbox"         /><input type="checkbox"         /><input type="checkbox"         /><br />
 			<input type="checkbox" checked /><input type="checkbox" checked /><input type="checkbox" checked />
+			<button type="button" onclick="append_char_code(this.parentElement.name)">Add</button>
 			<button type="reset">Reset</button>
 		</form>
 
@@ -1561,6 +1716,7 @@ function change_output(input_text) {
 			<input type="checkbox" checked /><input type="checkbox"         /><input type="checkbox" checked /><br />
 			<input type="checkbox"         /><input type="checkbox"         /><input type="checkbox"         /><br />
 			<input type="checkbox" checked /><input type="checkbox" checked /><input type="checkbox" checked />
+			<button type="button" onclick="append_char_code(this.parentElement.name)">Add</button>
 			<button type="reset">Reset</button>
 		</form>
 
@@ -1570,6 +1726,7 @@ function change_output(input_text) {
 			<input type="checkbox" checked /><input type="checkbox" checked /><input type="checkbox" checked /><br />
 			<input type="checkbox"         /><input type="checkbox"         /><input type="checkbox"         /><br />
 			<input type="checkbox" checked /><input type="checkbox"         /><input type="checkbox" checked />
+			<button type="button" onclick="append_char_code(this.parentElement.name)">Add</button>
 			<button type="reset">Reset</button>
 		</form>
 
@@ -1579,6 +1736,7 @@ function change_output(input_text) {
 			<input type="checkbox" checked /><input type="checkbox" checked /><input type="checkbox" checked /><br />
 			<input type="checkbox"         /><input type="checkbox"         /><input type="checkbox"         /><br />
 			<input type="checkbox" checked /><input type="checkbox"         /><input type="checkbox" checked />
+			<button type="button" onclick="append_char_code(this.parentElement.name)">Add</button>
 			<button type="reset">Reset</button>
 		</form>
 
@@ -1588,6 +1746,7 @@ function change_output(input_text) {
 			<input type="checkbox" checked /><input type="checkbox"         /><input type="checkbox" checked /><br />
 			<input type="checkbox"         /><input type="checkbox"         /><input type="checkbox"         /><br />
 			<input type="checkbox" checked /><input type="checkbox"         /><input type="checkbox" checked />
+			<button type="button" onclick="append_char_code(this.parentElement.name)">Add</button>
 			<button type="reset">Reset</button>
 		</form>
 
@@ -1597,6 +1756,7 @@ function change_output(input_text) {
 			<input type="checkbox" checked /><input type="checkbox"         /><input type="checkbox" checked /><br />
 			<input type="checkbox"         /><input type="checkbox"         /><input type="checkbox"         /><br />
 			<input type="checkbox" checked /><input type="checkbox"         /><input type="checkbox" checked />
+			<button type="button" onclick="append_char_code(this.parentElement.name)">Add</button>
 			<button type="reset">Reset</button>
 		</form>
 
@@ -1606,6 +1766,7 @@ function change_output(input_text) {
 			<input type="checkbox" checked /><input type="checkbox" checked /><input type="checkbox" checked /><br />
 			<input type="checkbox"         /><input type="checkbox"         /><input type="checkbox"         /><br />
 			<input type="checkbox"         /><input type="checkbox"         /><input type="checkbox"         />
+			<button type="button" onclick="append_char_code(this.parentElement.name)">Add</button>
 			<button type="reset">Reset</button>
 		</form>
 
@@ -1615,6 +1776,7 @@ function change_output(input_text) {
 			<input type="checkbox" checked /><input type="checkbox"         /><input type="checkbox" checked /><br />
 			<input type="checkbox"         /><input type="checkbox"         /><input type="checkbox"         /><br />
 			<input type="checkbox"         /><input type="checkbox"         /><input type="checkbox"         />
+			<button type="button" onclick="append_char_code(this.parentElement.name)">Add</button>
 			<button type="reset">Reset</button>
 		</form>
 
@@ -1624,6 +1786,7 @@ function change_output(input_text) {
 			<input type="checkbox"         /><input type="checkbox"         /><input type="checkbox"         /><br />
 			<input type="checkbox" checked /><input type="checkbox" checked /><input type="checkbox" checked /><br />
 			<input type="checkbox"         /><input type="checkbox"         /><input type="checkbox"         />
+			<button type="button" onclick="append_char_code(this.parentElement.name)">Add</button>
 			<button type="reset">Reset</button>
 		</form>
 
@@ -1633,6 +1796,7 @@ function change_output(input_text) {
 			<input type="checkbox"         /><input type="checkbox"         /><input type="checkbox"         /><br />
 			<input type="checkbox" checked /><input type="checkbox" checked /><input type="checkbox" checked /><br />
 			<input type="checkbox"         /><input type="checkbox"         /><input type="checkbox"         />
+			<button type="button" onclick="append_char_code(this.parentElement.name)">Add</button>
 			<button type="reset">Reset</button>
 		</form>
 
@@ -1642,6 +1806,7 @@ function change_output(input_text) {
 			<input type="checkbox"         /><input type="checkbox"         /><input type="checkbox"         /><br />
 			<input type="checkbox" checked /><input type="checkbox"         /><input type="checkbox" checked /><br />
 			<input type="checkbox"         /><input type="checkbox"         /><input type="checkbox"         />
+			<button type="button" onclick="append_char_code(this.parentElement.name)">Add</button>
 			<button type="reset">Reset</button>
 		</form>
 
@@ -1651,6 +1816,7 @@ function change_output(input_text) {
 			<input type="checkbox"         /><input type="checkbox"         /><input type="checkbox"         /><br />
 			<input type="checkbox" checked /><input type="checkbox"         /><input type="checkbox" checked /><br />
 			<input type="checkbox"         /><input type="checkbox"         /><input type="checkbox"         />
+			<button type="button" onclick="append_char_code(this.parentElement.name)">Add</button>
 			<button type="reset">Reset</button>
 		</form>
 
@@ -1660,6 +1826,7 @@ function change_output(input_text) {
 			<input type="checkbox" checked /><input type="checkbox" checked /><input type="checkbox" checked /><br />
 			<input type="checkbox" checked /><input type="checkbox" checked /><input type="checkbox" checked /><br />
 			<input type="checkbox"         /><input type="checkbox" checked /><input type="checkbox"         />
+			<button type="button" onclick="append_char_code(this.parentElement.name)">Add</button>
 			<button type="reset">Reset</button>
 		</form>
 
@@ -1669,6 +1836,7 @@ function change_output(input_text) {
 			<input type="checkbox" checked /><input type="checkbox" checked /><input type="checkbox" checked /><br />
 			<input type="checkbox"         /><input type="checkbox" checked /><input type="checkbox"         /><br />
 			<input type="checkbox"         /><input type="checkbox" checked /><input type="checkbox"         />
+			<button type="button" onclick="append_char_code(this.parentElement.name)">Add</button>
 			<button type="reset">Reset</button>
 		</form>
 
@@ -1678,6 +1846,7 @@ function change_output(input_text) {
 			<input type="checkbox" checked /><input type="checkbox" checked /><input type="checkbox" checked /><br />
 			<input type="checkbox" checked /><input type="checkbox"         /><input type="checkbox" checked /><br />
 			<input type="checkbox" checked /><input type="checkbox" checked /><input type="checkbox" checked />
+			<button type="button" onclick="append_char_code(this.parentElement.name)">Add</button>
 			<button type="reset">Reset</button>
 		</form>
 
@@ -1687,6 +1856,7 @@ function change_output(input_text) {
 			<input type="checkbox" checked /><input type="checkbox" checked /><input type="checkbox" checked /><br />
 			<input type="checkbox" checked /><input type="checkbox" checked /><input type="checkbox" checked /><br />
 			<input type="checkbox" checked /><input type="checkbox" checked /><input type="checkbox" checked />
+			<button type="button" onclick="append_char_code(this.parentElement.name)">Add</button>
 			<button type="reset">Reset</button>
 		</form>
 
@@ -1696,6 +1866,7 @@ function change_output(input_text) {
 			<input type="checkbox" checked /><input type="checkbox" checked /><input type="checkbox" checked /><br />
 			<input type="checkbox" checked /><input type="checkbox"         /><input type="checkbox" checked /><br />
 			<input type="checkbox"         /><input type="checkbox" checked /><input type="checkbox"         />
+			<button type="button" onclick="append_char_code(this.parentElement.name)">Add</button>
 			<button type="reset">Reset</button>
 		</form>
 
@@ -1705,6 +1876,7 @@ function change_output(input_text) {
 			<input type="checkbox" checked /><input type="checkbox" checked /><input type="checkbox" checked /><br />
 			<input type="checkbox"         /><input type="checkbox" checked /><input type="checkbox"         /><br />
 			<input type="checkbox"         /><input type="checkbox"         /><input type="checkbox"         />
+			<button type="button" onclick="append_char_code(this.parentElement.name)">Add</button>
 			<button type="reset">Reset</button>
 		</form>
 
@@ -1714,6 +1886,7 @@ function change_output(input_text) {
 			<input type="checkbox"         /><input type="checkbox"         /><input type="checkbox"         /><br />
 			<input type="checkbox"         /><input type="checkbox"         /><input type="checkbox"         /><br />
 			<input type="checkbox"         /><input type="checkbox"         /><input type="checkbox"         />
+			<button type="button" onclick="append_char_code(this.parentElement.name)">Add</button>
 			<button type="reset">Reset</button>
 		</form>
 
@@ -1723,6 +1896,7 @@ function change_output(input_text) {
 			<input type="checkbox"         /><input type="checkbox"         /><input type="checkbox"         /><br />
 			<input type="checkbox"         /><input type="checkbox"         /><input type="checkbox"         /><br />
 			<input type="checkbox"         /><input type="checkbox"         /><input type="checkbox"         />
+			<button type="button" onclick="append_char_code(this.parentElement.name)">Add</button>
 			<button type="reset">Reset</button>
 		</form>
 
@@ -1732,6 +1906,7 @@ function change_output(input_text) {
 			<input type="checkbox" checked /><input type="checkbox" checked /><input type="checkbox" checked /><br />
 			<input type="checkbox" checked /><input type="checkbox" checked /><input type="checkbox" checked /><br />
 			<input type="checkbox"         /><input type="checkbox"         /><input type="checkbox"         />
+			<button type="button" onclick="append_char_code(this.parentElement.name)">Add</button>
 			<button type="reset">Reset</button>
 		</form>
 
@@ -1741,6 +1916,7 @@ function change_output(input_text) {
 			<input type="checkbox"         /><input type="checkbox"         /><input type="checkbox" checked /><br />
 			<input type="checkbox"         /><input type="checkbox"         /><input type="checkbox" checked /><br />
 			<input type="checkbox"         /><input type="checkbox"         /><input type="checkbox" checked />
+			<button type="button" onclick="append_char_code(this.parentElement.name)">Add</button>
 			<button type="reset">Reset</button>
 		</form>
 
@@ -1750,6 +1926,7 @@ function change_output(input_text) {
 			<input type="checkbox"         /><input type="checkbox" checked /><input type="checkbox" checked /><br />
 			<input type="checkbox"         /><input type="checkbox" checked /><input type="checkbox" checked /><br />
 			<input type="checkbox"         /><input type="checkbox" checked /><input type="checkbox" checked />
+			<button type="button" onclick="append_char_code(this.parentElement.name)">Add</button>
 			<button type="reset">Reset</button>
 		</form>
 	</div>
