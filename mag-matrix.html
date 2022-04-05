@@ -168,7 +168,15 @@ function change_color_dot(new_color) {
 	root.style.setProperty("--color-dot", new_color);
 }
 
-window.onload = setup_color_dot;
+var max_len_input_text;
+
+window.onload = function() {
+
+	setup_color_dot();
+
+	const input_text_elem = document.querySelector("#input_text");
+	max_len_input_text = input_text_elem.maxLength;
+};
 
 function set_color_mag_black() {
 	document.body.classList.replace("color-mag-mct", "color-mag-black");
@@ -180,7 +188,6 @@ function set_color_mag_mct() {
 
 function change_output(input_text) {
 
-	const max_len_input_text = 4;
 	const default_in_char = " ";
 	const default_in_code = default_in_char.charCodeAt(0);
 	const default_in_code_str = default_in_code.toString(16).toUpperCase();
