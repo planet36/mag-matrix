@@ -265,6 +265,9 @@ function change_output(input_text) {
 				<input type="checkbox" disabled /><input type="checkbox" disabled /><input type="checkbox" disabled />
 			</form>
 
+			<label class="noprint">Print this?
+				<input type="checkbox" checked oninput="this.parentElement.parentElement.classList.toggle('noprint')">
+			</label>
 		</fieldset>
 
 	</div>
