@@ -15,7 +15,7 @@
 
 @media screen {
 	:root {
-		--color-mat-dot: #fdff38;
+		--color-dot: #fdff38;
 
 		--color-mag-black: #222222;
 		--color-mag-black-border-dark: #000000;
@@ -79,7 +79,7 @@
 	}
 
 	.matrix input[type="checkbox"]:checked {
-		background-color: var(--color-mat-dot);
+		background-color: var(--color-dot);
 	}
 
 	.matrix input[type="checkbox"]:disabled {
@@ -141,15 +141,15 @@ var default_color_mat_dot;
 function setup_color_mat_dot() {
 	var root = document.querySelector(":root");
 	var styles = window.getComputedStyle(root);
-	default_color_mat_dot = styles.getPropertyValue("--color-mat-dot");
+	default_color_mat_dot = styles.getPropertyValue("--color-dot");
 
-	var input_color_mat_dot = document.querySelector("#color-mat-dot");
+	var input_color_mat_dot = document.querySelector("#color-dot");
 	input_color_mat_dot.value = default_color_mat_dot;
 }
 
 function change_color_mat_dot(new_color) {
 	var root = document.querySelector(":root");
-	root.style.setProperty("--color-mat-dot", new_color);
+	root.style.setProperty("--color-dot", new_color);
 }
 
 window.onload = setup_color_mat_dot;
@@ -181,7 +181,7 @@ function set_color_mag_mct() {
 	<div class="noprint">
 		<fieldset>
 			<legend>Specify dot color</legend>
-			<input type="color" id="color-mat-dot" oninput="change_color_mat_dot(this.value)">
+			<input type="color" id="color-dot" oninput="change_color_mat_dot(this.value)">
 		</fieldset>
 	</div>
 
