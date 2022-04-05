@@ -136,9 +136,9 @@ SPDX-FileCopyrightText: Steven Ward
 SPDX-License-Identifier: OSL-3.0
 */
 
-var default_color_dot;
 
 function setup_color_dot() {
+	var default_color_dot;
 	var root = document.querySelector(":root");
 	var styles = window.getComputedStyle(root);
 	default_color_dot = styles.getPropertyValue("--color-dot");
