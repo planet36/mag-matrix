@@ -209,7 +209,6 @@ function change_output(input_text) {
 <body class="color-mag-black">
 
 	<div class="flex">
-
 		<fieldset class="noprint">
 			<legend>Magazine color</legend>
 			<label><input type="radio" name="color_mag" checked oninput="set_color_mag_black()">Black</label>
@@ -225,13 +224,15 @@ function change_output(input_text) {
 			<legend>Input</legend>
 			<input type="text" id="input_text" maxlength="4" size="5" oninput="change_output(this.value)">
 		</fieldset>
-
 	</div>
 
 	<div class="flex">
-
 		<fieldset>
 			<legend>Output</legend>
+
+			<label class="noprint">Print this?
+				<input type="checkbox" checked oninput="this.parentElement.parentElement.classList.toggle('noprint')"><br />
+			</label>
 
 			<form class="matrix" name="out_0" title="Output 1">
 				<input type="checkbox" disabled /><input type="checkbox" disabled /><input type="checkbox" disabled /><br />
@@ -264,12 +265,7 @@ function change_output(input_text) {
 				<input type="checkbox" disabled /><input type="checkbox" disabled /><input type="checkbox" disabled /><br />
 				<input type="checkbox" disabled /><input type="checkbox" disabled /><input type="checkbox" disabled />
 			</form>
-
-			<label class="noprint">Print this?
-				<input type="checkbox" checked oninput="this.parentElement.parentElement.classList.toggle('noprint')">
-			</label>
 		</fieldset>
-
 	</div>
 
 	<form class="matrix" name="code_30" title="DIGIT ZERO">
