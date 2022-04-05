@@ -200,12 +200,14 @@ function change_output(input_text) {
 		}
 
 		var in_code_str = in_code.toString(16).toUpperCase();
-		if (document.forms["code_" + in_code_str] === undefined) {
-			warn_once("No matrix character for " + String.fromCharCode(in_code) + " (U+" + in_code_str.padStart(4, "0") + ")");
+		var form_name = "code_" + in_code_str;
+		if (document.forms[form_name] === undefined) {
+			warn_once("No matrix character for " + String.fromCharCode(in_code) + " (U+" + in_code_str.padStart(max_len_input_text, "0") + ")");
 			in_code_str = default_in_code_str;
+			form_name = "code_" + in_code_str;
 		}
 
-		const ref_mat = document.forms["code_" + in_code_str].getElementsByTagName("input");
+		const ref_mat = document.forms[form_name].getElementsByTagName("input");
 		var out_mat = document.forms["out_" + i].getElementsByTagName("input");
 		for (var j = 0; j < ref_mat.length; ++j) {
 			out_mat[j].checked = ref_mat[j].checked;
