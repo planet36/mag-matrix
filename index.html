@@ -26,7 +26,7 @@
 		--color-mag-mct-border-light: #b99c7f;
 	}
 
-	button {
+	.matrix button {
 		display: block;
 		margin: auto;
 		margin-top: 1em;
@@ -250,6 +250,7 @@ function append_char_code(form_name) {
 		<fieldset class="noprint">
 			<legend>Input</legend>
 			<input type="text" id="input_text" maxlength="4" size="5" oninput="change_output(this.value)">
+			<button type="button" onclick="change_output(this.previousElementSibling.value)">Update</button>
 		</fieldset>
 	</div>
 
